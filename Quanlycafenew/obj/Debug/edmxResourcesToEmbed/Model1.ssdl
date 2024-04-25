@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QLCoffeeModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="tbBan">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TenBan" Type="nvarchar" MaxLength="15" />
+    <Property Name="Trangthai" Type="varchar" MaxLength="12" />
+  </EntityType>
+  <EntityType Name="tbChitiet">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IDHoadon" Type="int" />
+    <Property Name="IDSanpham" Type="int" />
+    <Property Name="IDNhanvien" Type="int" />
+    <Property Name="IDKhachhang" Type="int" />
+  </EntityType>
+  <EntityType Name="tbHoadon">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IDSanpham" Type="int" />
+    <Property Name="Soluong" Type="int" />
+    <Property Name="Dongia" Type="int" />
+    <Property Name="Tongtien" Type="int" />
+  </EntityType>
+  <EntityType Name="tbKhachhang">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TenKH" Type="nvarchar" MaxLength="15" />
+    <Property Name="Ngaysinh" Type="varchar" MaxLength="20" />
+    <Property Name="Gioitinh" Type="varchar" MaxLength="20" />
+    <Property Name="SDT" Type="int" />
+    <Property Name="Diachi" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbNhanvien">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TenNV" Type="nvarchar" MaxLength="15" />
+    <Property Name="Ngaysinh" Type="varchar" MaxLength="20" />
+    <Property Name="Gioitinh" Type="varchar" MaxLength="20" />
+    <Property Name="Quequan" Type="varchar" MaxLength="20" />
+    <Property Name="CMND" Type="varchar" MaxLength="20" />
+    <Property Name="Email" Type="varchar" MaxLength="20" />
+    <Property Name="SDT" Type="int" />
+    <Property Name="Ngaybatdau" Type="varchar" MaxLength="20" />
+    <Property Name="Calam" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="tbSanpham">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TenSP" Type="nvarchar" MaxLength="15" />
+    <Property Name="Dongia" Type="int" />
+    <Property Name="SLTon" Type="int" />
+    <Property Name="SLdaban" Type="int" />
+  </EntityType>
+  <Association Name="FK_tbChitiet_tbHoadon">
+    <End Role="tbHoadon" Type="Self.tbHoadon" Multiplicity="0..1" />
+    <End Role="tbChitiet" Type="Self.tbChitiet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbHoadon">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tbChitiet">
+        <PropertyRef Name="IDHoadon" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbChitiet_tbKhachhang">
+    <End Role="tbKhachhang" Type="Self.tbKhachhang" Multiplicity="0..1" />
+    <End Role="tbChitiet" Type="Self.tbChitiet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbKhachhang">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tbChitiet">
+        <PropertyRef Name="IDKhachhang" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbChitiet_tbNhanvien">
+    <End Role="tbNhanvien" Type="Self.tbNhanvien" Multiplicity="0..1" />
+    <End Role="tbChitiet" Type="Self.tbChitiet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbNhanvien">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tbChitiet">
+        <PropertyRef Name="IDNhanvien" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbChitiet_tbSanpham">
+    <End Role="tbSanpham" Type="Self.tbSanpham" Multiplicity="0..1" />
+    <End Role="tbChitiet" Type="Self.tbChitiet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbSanpham">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tbChitiet">
+        <PropertyRef Name="IDSanpham" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="QLCoffeeModelStoreContainer">
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbBan" EntityType="Self.tbBan" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbChitiet" EntityType="Self.tbChitiet" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbHoadon" EntityType="Self.tbHoadon" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbKhachhang" EntityType="Self.tbKhachhang" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbNhanvien" EntityType="Self.tbNhanvien" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbSanpham" EntityType="Self.tbSanpham" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_tbChitiet_tbHoadon" Association="Self.FK_tbChitiet_tbHoadon">
+      <End Role="tbHoadon" EntitySet="tbHoadon" />
+      <End Role="tbChitiet" EntitySet="tbChitiet" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbChitiet_tbKhachhang" Association="Self.FK_tbChitiet_tbKhachhang">
+      <End Role="tbKhachhang" EntitySet="tbKhachhang" />
+      <End Role="tbChitiet" EntitySet="tbChitiet" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbChitiet_tbNhanvien" Association="Self.FK_tbChitiet_tbNhanvien">
+      <End Role="tbNhanvien" EntitySet="tbNhanvien" />
+      <End Role="tbChitiet" EntitySet="tbChitiet" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbChitiet_tbSanpham" Association="Self.FK_tbChitiet_tbSanpham">
+      <End Role="tbSanpham" EntitySet="tbSanpham" />
+      <End Role="tbChitiet" EntitySet="tbChitiet" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

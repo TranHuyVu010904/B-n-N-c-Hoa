@@ -1,0 +1,246 @@
+C:\Users\Josh\Desktop\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.csprojAssemblyReference.cache
+C:\Users\Josh\Desktop\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.Properties.Resources.resources
+C:\Users\Josh\Desktop\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.csproj.GenerateResource.cache
+C:\Users\Josh\Desktop\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.csproj.CoreCompileInputs.cache
+C:\Users\Josh\Desktop\Quanlycafenew\Quanlycafenew\bin\Debug\Quanlycafenew.exe.config
+C:\Users\Josh\Desktop\Quanlycafenew\Quanlycafenew\bin\Debug\Quanlycafenew.exe
+C:\Users\Josh\Desktop\Quanlycafenew\Quanlycafenew\bin\Debug\Quanlycafenew.pdb
+C:\Users\Josh\Desktop\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.frmmain.resources
+C:\Users\Josh\Desktop\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.exe
+C:\Users\Josh\Desktop\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.pdb
+C:\Users\Josh\Desktop\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.frmLogin.resources
+C:\Users\Josh\Desktop\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.frmQuanlyhoadon.resources
+C:\Users\Josh\Desktop\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.frmQuanlykhachhang.resources
+C:\Users\Josh\Desktop\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.frmQuanlynhanvien.resources
+C:\Users\Josh\Desktop\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.frmQuanlysanpham.resources
+D:\Lập trình Window\Quanlycafenew\Quanlycafenew\bin\Debug\Quanlycafenew.exe.config
+D:\Lập trình Window\Quanlycafenew\Quanlycafenew\bin\Debug\Quanlycafenew.exe
+D:\Lập trình Window\Quanlycafenew\Quanlycafenew\bin\Debug\Quanlycafenew.pdb
+D:\Lập trình Window\Quanlycafenew\Quanlycafenew\bin\Debug\EntityFramework.dll
+D:\Lập trình Window\Quanlycafenew\Quanlycafenew\bin\Debug\EntityFramework.SqlServer.dll
+D:\Lập trình Window\Quanlycafenew\Quanlycafenew\bin\Debug\EntityFramework.xml
+D:\Lập trình Window\Quanlycafenew\Quanlycafenew\bin\Debug\EntityFramework.SqlServer.xml
+D:\Lập trình Window\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.csprojAssemblyReference.cache
+D:\Lập trình Window\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.frmLogin.resources
+D:\Lập trình Window\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.frmQuanlyhoadon.resources
+D:\Lập trình Window\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.frmQuanlykhachhang.resources
+D:\Lập trình Window\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.frmQuanlynhanvien.resources
+D:\Lập trình Window\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.frmQuanlysanpham.resources
+D:\Lập trình Window\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.frmmain.resources
+D:\Lập trình Window\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.Properties.Resources.resources
+D:\Lập trình Window\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.csproj.GenerateResource.cache
+D:\Lập trình Window\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.csproj.CoreCompileInputs.cache
+D:\Lập trình Window\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.csproj.CopyComplete
+D:\Lập trình Window\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.exe
+D:\Lập trình Window\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.pdb
+C:\Users\bibin\Downloads\Quanlycafenew\Quanlycafenew\Quanlycafenew\bin\Debug\Quanlycafenew.exe.config
+C:\Users\bibin\Downloads\Quanlycafenew\Quanlycafenew\Quanlycafenew\bin\Debug\Quanlycafenew.exe
+C:\Users\bibin\Downloads\Quanlycafenew\Quanlycafenew\Quanlycafenew\bin\Debug\Quanlycafenew.pdb
+C:\Users\bibin\Downloads\Quanlycafenew\Quanlycafenew\Quanlycafenew\bin\Debug\EntityFramework.dll
+C:\Users\bibin\Downloads\Quanlycafenew\Quanlycafenew\Quanlycafenew\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\bibin\Downloads\Quanlycafenew\Quanlycafenew\Quanlycafenew\bin\Debug\EntityFramework.xml
+C:\Users\bibin\Downloads\Quanlycafenew\Quanlycafenew\Quanlycafenew\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\bibin\Downloads\Quanlycafenew\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.csprojAssemblyReference.cache
+C:\Users\bibin\Downloads\Quanlycafenew\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.FrmQuanlyban.resources
+C:\Users\bibin\Downloads\Quanlycafenew\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.frmQuanlyhoadon.resources
+C:\Users\bibin\Downloads\Quanlycafenew\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.frmXuathoadon.resources
+C:\Users\bibin\Downloads\Quanlycafenew\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.frmLogin.resources
+C:\Users\bibin\Downloads\Quanlycafenew\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.frmHoadon.resources
+C:\Users\bibin\Downloads\Quanlycafenew\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.frmQuanlykhachhang.resources
+C:\Users\bibin\Downloads\Quanlycafenew\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.frmQuanlynhanvien.resources
+C:\Users\bibin\Downloads\Quanlycafenew\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.frmQuanlysanpham.resources
+C:\Users\bibin\Downloads\Quanlycafenew\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.frmmain.resources
+C:\Users\bibin\Downloads\Quanlycafenew\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.Properties.Resources.resources
+C:\Users\bibin\Downloads\Quanlycafenew\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.csproj.GenerateResource.cache
+C:\Users\bibin\Downloads\Quanlycafenew\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.csproj.CoreCompileInputs.cache
+C:\Users\bibin\Downloads\Quanlycafenew\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.csproj.CopyComplete
+C:\Users\bibin\Downloads\Quanlycafenew\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.exe
+C:\Users\bibin\Downloads\Quanlycafenew\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.pdb
+D:\Lập trình Window\Quanlycafenew\Quanlycafenew\Quanlycafenew\bin\Debug\Quanlycafenew.exe.config
+D:\Lập trình Window\Quanlycafenew\Quanlycafenew\Quanlycafenew\bin\Debug\Quanlycafenew.exe
+D:\Lập trình Window\Quanlycafenew\Quanlycafenew\Quanlycafenew\bin\Debug\Quanlycafenew.pdb
+D:\Lập trình Window\Quanlycafenew\Quanlycafenew\Quanlycafenew\bin\Debug\EntityFramework.dll
+D:\Lập trình Window\Quanlycafenew\Quanlycafenew\Quanlycafenew\bin\Debug\EntityFramework.SqlServer.dll
+D:\Lập trình Window\Quanlycafenew\Quanlycafenew\Quanlycafenew\bin\Debug\EntityFramework.xml
+D:\Lập trình Window\Quanlycafenew\Quanlycafenew\Quanlycafenew\bin\Debug\EntityFramework.SqlServer.xml
+D:\Lập trình Window\Quanlycafenew\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.csprojAssemblyReference.cache
+D:\Lập trình Window\Quanlycafenew\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.FrmQuanlyban.resources
+D:\Lập trình Window\Quanlycafenew\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.frmQuanlyhoadon.resources
+D:\Lập trình Window\Quanlycafenew\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.frmXuathoadon.resources
+D:\Lập trình Window\Quanlycafenew\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.frmLogin.resources
+D:\Lập trình Window\Quanlycafenew\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.frmHoadon.resources
+D:\Lập trình Window\Quanlycafenew\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.frmQuanlykhachhang.resources
+D:\Lập trình Window\Quanlycafenew\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.frmQuanlynhanvien.resources
+D:\Lập trình Window\Quanlycafenew\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.frmQuanlysanpham.resources
+D:\Lập trình Window\Quanlycafenew\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.frmmain.resources
+D:\Lập trình Window\Quanlycafenew\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.Properties.Resources.resources
+D:\Lập trình Window\Quanlycafenew\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.csproj.GenerateResource.cache
+D:\Lập trình Window\Quanlycafenew\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.csproj.CoreCompileInputs.cache
+D:\Lập trình Window\Quanlycafenew\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.csproj.CopyComplete
+D:\Lập trình Window\Quanlycafenew\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.exe
+D:\Lập trình Window\Quanlycafenew\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.pdb
+C:\Users\ADMIN\Desktop\newsql\Quanlycafenew\Quanlycafenew\bin\Debug\Quanlycafenew.exe.config
+C:\Users\ADMIN\Desktop\newsql\Quanlycafenew\Quanlycafenew\bin\Debug\Quanlycafenew.exe
+C:\Users\ADMIN\Desktop\newsql\Quanlycafenew\Quanlycafenew\bin\Debug\Quanlycafenew.pdb
+C:\Users\ADMIN\Desktop\newsql\Quanlycafenew\Quanlycafenew\bin\Debug\EntityFramework.dll
+C:\Users\ADMIN\Desktop\newsql\Quanlycafenew\Quanlycafenew\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ADMIN\Desktop\newsql\Quanlycafenew\Quanlycafenew\bin\Debug\EntityFramework.xml
+C:\Users\ADMIN\Desktop\newsql\Quanlycafenew\Quanlycafenew\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ADMIN\Desktop\newsql\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.frmXuathoadon.resources
+C:\Users\ADMIN\Desktop\newsql\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.frmLogin.resources
+C:\Users\ADMIN\Desktop\newsql\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.frmHoadon.resources
+C:\Users\ADMIN\Desktop\newsql\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.frmQuanlykhachhang.resources
+C:\Users\ADMIN\Desktop\newsql\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.frmQuanlynhanvien.resources
+C:\Users\ADMIN\Desktop\newsql\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.frmQuanlysanpham.resources
+C:\Users\ADMIN\Desktop\newsql\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.frmmain.resources
+C:\Users\ADMIN\Desktop\newsql\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.Properties.Resources.resources
+C:\Users\ADMIN\Desktop\newsql\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.csproj.GenerateResource.cache
+C:\Users\ADMIN\Desktop\newsql\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Desktop\newsql\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.csproj.CopyComplete
+C:\Users\ADMIN\Desktop\newsql\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.exe
+C:\Users\ADMIN\Desktop\newsql\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.pdb
+C:\Users\ADMIN\Desktop\newsql\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.csproj.ResolveComReference.cache
+C:\Users\ADMIN\Desktop\newsql\Quanlycafenew\Quanlycafenew\obj\Debug\Interop.LCC11.dll
+C:\Users\ADMIN\Desktop\newsql\Quanlycafenew\Quanlycafenew\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\ADMIN\Desktop\newsql\Quanlycafenew\Quanlycafenew\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\ADMIN\Desktop\newsql\Quanlycafenew\Quanlycafenew\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\ADMIN\Desktop\newsql\Quanlycafenew\Quanlycafenew\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\ADMIN\Desktop\newsql\Quanlycafenew\Quanlycafenew\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\ADMIN\Desktop\newsql\Quanlycafenew\Quanlycafenew\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\ADMIN\Desktop\newsql\Quanlycafenew\Quanlycafenew\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\ADMIN\Desktop\newsql\Quanlycafenew\Quanlycafenew\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\ADMIN\Desktop\newsql\Quanlycafenew\Quanlycafenew\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\ADMIN\Desktop\newsql\Quanlycafenew\Quanlycafenew\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\ADMIN\Desktop\newsql\Quanlycafenew\Quanlycafenew\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\ADMIN\Desktop\newsql\Quanlycafenew\Quanlycafenew\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\ADMIN\Desktop\newsql\Quanlycafenew\Quanlycafenew\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\ADMIN\Desktop\newsql\Quanlycafenew\Quanlycafenew\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\ADMIN\Desktop\newsql\Quanlycafenew\Quanlycafenew\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\ADMIN\Desktop\newsql\Quanlycafenew\Quanlycafenew\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\ADMIN\Desktop\newsql\Quanlycafenew\Quanlycafenew\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\ADMIN\Desktop\newsql\Quanlycafenew\Quanlycafenew\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\ADMIN\Desktop\newsql\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.frmBaocao.resources
+C:\Users\ADMIN\Desktop\newsql\Quanlycafenew\Quanlycafenew\obj\Debug\RdlCompile.cache
+C:\Users\ADMIN\Desktop\newsql\Quanlycafenew\Quanlycafenew\obj\Debug\RdlCompile.compiled
+C:\Users\ADMIN\Desktop\newsql\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.csprojAssemblyReference.cache
+C:\Users\HP\Downloads\Doanwin\newsql\Quanlycafenew\Quanlycafenew\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\HP\Downloads\Doanwin\newsql\Quanlycafenew\Quanlycafenew\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\HP\Downloads\Doanwin\newsql\Quanlycafenew\Quanlycafenew\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\HP\Downloads\Doanwin\newsql\Quanlycafenew\Quanlycafenew\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\HP\Downloads\Doanwin\newsql\Quanlycafenew\Quanlycafenew\bin\Debug\Quanlycafenew.exe.config
+C:\Users\HP\Downloads\Doanwin\newsql\Quanlycafenew\Quanlycafenew\bin\Debug\Quanlycafenew.exe
+C:\Users\HP\Downloads\Doanwin\newsql\Quanlycafenew\Quanlycafenew\bin\Debug\Quanlycafenew.pdb
+C:\Users\HP\Downloads\Doanwin\newsql\Quanlycafenew\Quanlycafenew\bin\Debug\EntityFramework.dll
+C:\Users\HP\Downloads\Doanwin\newsql\Quanlycafenew\Quanlycafenew\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\HP\Downloads\Doanwin\newsql\Quanlycafenew\Quanlycafenew\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\HP\Downloads\Doanwin\newsql\Quanlycafenew\Quanlycafenew\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\HP\Downloads\Doanwin\newsql\Quanlycafenew\Quanlycafenew\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\HP\Downloads\Doanwin\newsql\Quanlycafenew\Quanlycafenew\bin\Debug\EntityFramework.xml
+C:\Users\HP\Downloads\Doanwin\newsql\Quanlycafenew\Quanlycafenew\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\HP\Downloads\Doanwin\newsql\Quanlycafenew\Quanlycafenew\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\HP\Downloads\Doanwin\newsql\Quanlycafenew\Quanlycafenew\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\HP\Downloads\Doanwin\newsql\Quanlycafenew\Quanlycafenew\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\HP\Downloads\Doanwin\newsql\Quanlycafenew\Quanlycafenew\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\HP\Downloads\Doanwin\newsql\Quanlycafenew\Quanlycafenew\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\HP\Downloads\Doanwin\newsql\Quanlycafenew\Quanlycafenew\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\HP\Downloads\Doanwin\newsql\Quanlycafenew\Quanlycafenew\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\HP\Downloads\Doanwin\newsql\Quanlycafenew\Quanlycafenew\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\HP\Downloads\Doanwin\newsql\Quanlycafenew\Quanlycafenew\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\HP\Downloads\Doanwin\newsql\Quanlycafenew\Quanlycafenew\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\HP\Downloads\Doanwin\newsql\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.csproj.AssemblyReference.cache
+C:\Users\HP\Downloads\Doanwin\newsql\Quanlycafenew\Quanlycafenew\obj\Debug\Interop.Office.dll
+C:\Users\HP\Downloads\Doanwin\newsql\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.csproj.ResolveComReference.cache
+C:\Users\HP\Downloads\Doanwin\newsql\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.frmBaocao.resources
+C:\Users\HP\Downloads\Doanwin\newsql\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.frmXuathoadon.resources
+C:\Users\HP\Downloads\Doanwin\newsql\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.frmLogin.resources
+C:\Users\HP\Downloads\Doanwin\newsql\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.frmHoadon.resources
+C:\Users\HP\Downloads\Doanwin\newsql\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.frmQuanlykhachhang.resources
+C:\Users\HP\Downloads\Doanwin\newsql\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.frmQuanlynhanvien.resources
+C:\Users\HP\Downloads\Doanwin\newsql\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.frmQuanlysanpham.resources
+C:\Users\HP\Downloads\Doanwin\newsql\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.frmmain.resources
+C:\Users\HP\Downloads\Doanwin\newsql\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.Properties.Resources.resources
+C:\Users\HP\Downloads\Doanwin\newsql\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.csproj.GenerateResource.cache
+C:\Users\HP\Downloads\Doanwin\newsql\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.csproj.CoreCompileInputs.cache
+C:\Users\HP\Downloads\Doanwin\newsql\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.csproj.CopyComplete
+C:\Users\HP\Downloads\Doanwin\newsql\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.exe
+C:\Users\HP\Downloads\Doanwin\newsql\Quanlycafenew\Quanlycafenew\obj\Debug\Quanlycafenew.pdb
+C:\Users\thamt\OneDrive\Máy tính\C#Cofee\doan\TheCoffeeHouse\Quanlycafenew\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\thamt\OneDrive\Máy tính\C#Cofee\doan\TheCoffeeHouse\Quanlycafenew\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\thamt\OneDrive\Máy tính\C#Cofee\doan\TheCoffeeHouse\Quanlycafenew\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\thamt\OneDrive\Máy tính\C#Cofee\doan\TheCoffeeHouse\Quanlycafenew\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\thamt\OneDrive\Máy tính\C#Cofee\doan\TheCoffeeHouse\Quanlycafenew\bin\Debug\Quanlycafenew.exe.config
+C:\Users\thamt\OneDrive\Máy tính\C#Cofee\doan\TheCoffeeHouse\Quanlycafenew\bin\Debug\Quanlycafenew.exe
+C:\Users\thamt\OneDrive\Máy tính\C#Cofee\doan\TheCoffeeHouse\Quanlycafenew\bin\Debug\Quanlycafenew.pdb
+C:\Users\thamt\OneDrive\Máy tính\C#Cofee\doan\TheCoffeeHouse\Quanlycafenew\bin\Debug\EntityFramework.dll
+C:\Users\thamt\OneDrive\Máy tính\C#Cofee\doan\TheCoffeeHouse\Quanlycafenew\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\thamt\OneDrive\Máy tính\C#Cofee\doan\TheCoffeeHouse\Quanlycafenew\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\thamt\OneDrive\Máy tính\C#Cofee\doan\TheCoffeeHouse\Quanlycafenew\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\thamt\OneDrive\Máy tính\C#Cofee\doan\TheCoffeeHouse\Quanlycafenew\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\thamt\OneDrive\Máy tính\C#Cofee\doan\TheCoffeeHouse\Quanlycafenew\bin\Debug\EntityFramework.xml
+C:\Users\thamt\OneDrive\Máy tính\C#Cofee\doan\TheCoffeeHouse\Quanlycafenew\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\thamt\OneDrive\Máy tính\C#Cofee\doan\TheCoffeeHouse\Quanlycafenew\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\thamt\OneDrive\Máy tính\C#Cofee\doan\TheCoffeeHouse\Quanlycafenew\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\thamt\OneDrive\Máy tính\C#Cofee\doan\TheCoffeeHouse\Quanlycafenew\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\thamt\OneDrive\Máy tính\C#Cofee\doan\TheCoffeeHouse\Quanlycafenew\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\thamt\OneDrive\Máy tính\C#Cofee\doan\TheCoffeeHouse\Quanlycafenew\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\thamt\OneDrive\Máy tính\C#Cofee\doan\TheCoffeeHouse\Quanlycafenew\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\thamt\OneDrive\Máy tính\C#Cofee\doan\TheCoffeeHouse\Quanlycafenew\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\thamt\OneDrive\Máy tính\C#Cofee\doan\TheCoffeeHouse\Quanlycafenew\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\thamt\OneDrive\Máy tính\C#Cofee\doan\TheCoffeeHouse\Quanlycafenew\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\thamt\OneDrive\Máy tính\C#Cofee\doan\TheCoffeeHouse\Quanlycafenew\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\thamt\OneDrive\Máy tính\C#Cofee\doan\TheCoffeeHouse\Quanlycafenew\obj\Debug\Quanlycafenew.csproj.AssemblyReference.cache
+C:\Users\thamt\OneDrive\Máy tính\C#Cofee\doan\TheCoffeeHouse\Quanlycafenew\obj\Debug\Quanlycafenew.csproj.ResolveComReference.cache
+C:\Users\thamt\OneDrive\Máy tính\C#Cofee\doan\TheCoffeeHouse\Quanlycafenew\obj\Debug\Quanlycafenew.frmBaocao.resources
+C:\Users\thamt\OneDrive\Máy tính\C#Cofee\doan\TheCoffeeHouse\Quanlycafenew\obj\Debug\Quanlycafenew.frmXuathoadon.resources
+C:\Users\thamt\OneDrive\Máy tính\C#Cofee\doan\TheCoffeeHouse\Quanlycafenew\obj\Debug\Quanlycafenew.frmLogin.resources
+C:\Users\thamt\OneDrive\Máy tính\C#Cofee\doan\TheCoffeeHouse\Quanlycafenew\obj\Debug\Quanlycafenew.frmHoadon.resources
+C:\Users\thamt\OneDrive\Máy tính\C#Cofee\doan\TheCoffeeHouse\Quanlycafenew\obj\Debug\Quanlycafenew.frmQuanlykhachhang.resources
+C:\Users\thamt\OneDrive\Máy tính\C#Cofee\doan\TheCoffeeHouse\Quanlycafenew\obj\Debug\Quanlycafenew.frmQuanlynhanvien.resources
+C:\Users\thamt\OneDrive\Máy tính\C#Cofee\doan\TheCoffeeHouse\Quanlycafenew\obj\Debug\Quanlycafenew.frmQuanlysanpham.resources
+C:\Users\thamt\OneDrive\Máy tính\C#Cofee\doan\TheCoffeeHouse\Quanlycafenew\obj\Debug\Quanlycafenew.frmmain.resources
+C:\Users\thamt\OneDrive\Máy tính\C#Cofee\doan\TheCoffeeHouse\Quanlycafenew\obj\Debug\Quanlycafenew.Properties.Resources.resources
+C:\Users\thamt\OneDrive\Máy tính\C#Cofee\doan\TheCoffeeHouse\Quanlycafenew\obj\Debug\Quanlycafenew.csproj.GenerateResource.cache
+C:\Users\thamt\OneDrive\Máy tính\C#Cofee\doan\TheCoffeeHouse\Quanlycafenew\obj\Debug\Quanlycafenew.csproj.CoreCompileInputs.cache
+C:\Users\thamt\OneDrive\Máy tính\C#Cofee\doan\TheCoffeeHouse\Quanlycafenew\obj\Debug\Quanlyca.C790CE86.Up2Date
+C:\Users\thamt\OneDrive\Máy tính\C#Cofee\doan\TheCoffeeHouse\Quanlycafenew\obj\Debug\Quanlycafenew.exe
+C:\Users\thamt\OneDrive\Máy tính\C#Cofee\doan\TheCoffeeHouse\Quanlycafenew\obj\Debug\Quanlycafenew.pdb
+C:\Users\thamt\OneDrive\Máy tính\dd\doan\TheCoffeeHouse\Quanlycafenew\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\thamt\OneDrive\Máy tính\dd\doan\TheCoffeeHouse\Quanlycafenew\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\thamt\OneDrive\Máy tính\dd\doan\TheCoffeeHouse\Quanlycafenew\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\thamt\OneDrive\Máy tính\dd\doan\TheCoffeeHouse\Quanlycafenew\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\thamt\OneDrive\Máy tính\dd\doan\TheCoffeeHouse\Quanlycafenew\bin\Debug\Quanlycafenew.exe.config
+C:\Users\thamt\OneDrive\Máy tính\dd\doan\TheCoffeeHouse\Quanlycafenew\bin\Debug\Quanlycafenew.exe
+C:\Users\thamt\OneDrive\Máy tính\dd\doan\TheCoffeeHouse\Quanlycafenew\bin\Debug\Quanlycafenew.pdb
+C:\Users\thamt\OneDrive\Máy tính\dd\doan\TheCoffeeHouse\Quanlycafenew\bin\Debug\EntityFramework.dll
+C:\Users\thamt\OneDrive\Máy tính\dd\doan\TheCoffeeHouse\Quanlycafenew\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\thamt\OneDrive\Máy tính\dd\doan\TheCoffeeHouse\Quanlycafenew\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\thamt\OneDrive\Máy tính\dd\doan\TheCoffeeHouse\Quanlycafenew\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\thamt\OneDrive\Máy tính\dd\doan\TheCoffeeHouse\Quanlycafenew\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\thamt\OneDrive\Máy tính\dd\doan\TheCoffeeHouse\Quanlycafenew\bin\Debug\EntityFramework.xml
+C:\Users\thamt\OneDrive\Máy tính\dd\doan\TheCoffeeHouse\Quanlycafenew\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\thamt\OneDrive\Máy tính\dd\doan\TheCoffeeHouse\Quanlycafenew\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\thamt\OneDrive\Máy tính\dd\doan\TheCoffeeHouse\Quanlycafenew\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\thamt\OneDrive\Máy tính\dd\doan\TheCoffeeHouse\Quanlycafenew\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\thamt\OneDrive\Máy tính\dd\doan\TheCoffeeHouse\Quanlycafenew\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\thamt\OneDrive\Máy tính\dd\doan\TheCoffeeHouse\Quanlycafenew\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\thamt\OneDrive\Máy tính\dd\doan\TheCoffeeHouse\Quanlycafenew\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\thamt\OneDrive\Máy tính\dd\doan\TheCoffeeHouse\Quanlycafenew\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\thamt\OneDrive\Máy tính\dd\doan\TheCoffeeHouse\Quanlycafenew\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\thamt\OneDrive\Máy tính\dd\doan\TheCoffeeHouse\Quanlycafenew\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\thamt\OneDrive\Máy tính\dd\doan\TheCoffeeHouse\Quanlycafenew\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\thamt\OneDrive\Máy tính\dd\doan\TheCoffeeHouse\Quanlycafenew\obj\Debug\Quanlycafenew.csproj.AssemblyReference.cache
+C:\Users\thamt\OneDrive\Máy tính\dd\doan\TheCoffeeHouse\Quanlycafenew\obj\Debug\Quanlycafenew.csproj.ResolveComReference.cache
+C:\Users\thamt\OneDrive\Máy tính\dd\doan\TheCoffeeHouse\Quanlycafenew\obj\Debug\Quanlycafenew.frmBaocao.resources
+C:\Users\thamt\OneDrive\Máy tính\dd\doan\TheCoffeeHouse\Quanlycafenew\obj\Debug\Quanlycafenew.frmXuathoadon.resources
+C:\Users\thamt\OneDrive\Máy tính\dd\doan\TheCoffeeHouse\Quanlycafenew\obj\Debug\Quanlycafenew.frmLogin.resources
+C:\Users\thamt\OneDrive\Máy tính\dd\doan\TheCoffeeHouse\Quanlycafenew\obj\Debug\Quanlycafenew.frmHoadon.resources
+C:\Users\thamt\OneDrive\Máy tính\dd\doan\TheCoffeeHouse\Quanlycafenew\obj\Debug\Quanlycafenew.frmQuanlykhachhang.resources
+C:\Users\thamt\OneDrive\Máy tính\dd\doan\TheCoffeeHouse\Quanlycafenew\obj\Debug\Quanlycafenew.frmQuanlynhanvien.resources
+C:\Users\thamt\OneDrive\Máy tính\dd\doan\TheCoffeeHouse\Quanlycafenew\obj\Debug\Quanlycafenew.frmQuanlysanpham.resources
+C:\Users\thamt\OneDrive\Máy tính\dd\doan\TheCoffeeHouse\Quanlycafenew\obj\Debug\Quanlycafenew.frmmain.resources
+C:\Users\thamt\OneDrive\Máy tính\dd\doan\TheCoffeeHouse\Quanlycafenew\obj\Debug\Quanlycafenew.Properties.Resources.resources
+C:\Users\thamt\OneDrive\Máy tính\dd\doan\TheCoffeeHouse\Quanlycafenew\obj\Debug\Quanlycafenew.csproj.GenerateResource.cache
+C:\Users\thamt\OneDrive\Máy tính\dd\doan\TheCoffeeHouse\Quanlycafenew\obj\Debug\Quanlycafenew.csproj.CoreCompileInputs.cache
+C:\Users\thamt\OneDrive\Máy tính\dd\doan\TheCoffeeHouse\Quanlycafenew\obj\Debug\Quanlyca.C790CE86.Up2Date
+C:\Users\thamt\OneDrive\Máy tính\dd\doan\TheCoffeeHouse\Quanlycafenew\obj\Debug\Quanlycafenew.exe
+C:\Users\thamt\OneDrive\Máy tính\dd\doan\TheCoffeeHouse\Quanlycafenew\obj\Debug\Quanlycafenew.pdb
