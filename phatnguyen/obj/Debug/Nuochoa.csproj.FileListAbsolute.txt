@@ -81,3 +81,26 @@ C:\doan\C#Nuochoa\C#Nuochoa\C#Nuochoa\phatnguyen\obj\Debug\Nuochoa.StaffControl.
 C:\doan\C#Nuochoa\C#Nuochoa\C#Nuochoa\phatnguyen\obj\Debug\Nuochoa.csproj.GenerateResource.cache
 C:\doan\C#Nuochoa\C#Nuochoa\C#Nuochoa\phatnguyen\obj\Debug\Nuochoa.csproj.CoreCompileInputs.cache
 C:\doan\C#Nuochoa\C#Nuochoa\C#Nuochoa\phatnguyen\obj\Debug\Nuochoa.csproj.Up2Date
+C:\Users\thamt\OneDrive\Máy tính\TheCoffeeHouse\B-n-N-c-Hoa\phatnguyen\bin\Debug\Nuochoa.exe.config
+C:\Users\thamt\OneDrive\Máy tính\TheCoffeeHouse\B-n-N-c-Hoa\phatnguyen\bin\Debug\Nuochoa.exe
+C:\Users\thamt\OneDrive\Máy tính\TheCoffeeHouse\B-n-N-c-Hoa\phatnguyen\bin\Debug\Nuochoa.pdb
+C:\Users\thamt\OneDrive\Máy tính\TheCoffeeHouse\B-n-N-c-Hoa\phatnguyen\bin\Debug\EntityFramework.dll
+C:\Users\thamt\OneDrive\Máy tính\TheCoffeeHouse\B-n-N-c-Hoa\phatnguyen\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\thamt\OneDrive\Máy tính\TheCoffeeHouse\B-n-N-c-Hoa\phatnguyen\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\thamt\OneDrive\Máy tính\TheCoffeeHouse\B-n-N-c-Hoa\phatnguyen\bin\Debug\EntityFramework.xml
+C:\Users\thamt\OneDrive\Máy tính\TheCoffeeHouse\B-n-N-c-Hoa\phatnguyen\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\thamt\OneDrive\Máy tính\TheCoffeeHouse\B-n-N-c-Hoa\phatnguyen\obj\Debug\Nuochoa.csproj.AssemblyReference.cache
+C:\Users\thamt\OneDrive\Máy tính\TheCoffeeHouse\B-n-N-c-Hoa\phatnguyen\obj\Debug\Nuochoa.frmBill.resources
+C:\Users\thamt\OneDrive\Máy tính\TheCoffeeHouse\B-n-N-c-Hoa\phatnguyen\obj\Debug\Nuochoa.frmCustomer.resources
+C:\Users\thamt\OneDrive\Máy tính\TheCoffeeHouse\B-n-N-c-Hoa\phatnguyen\obj\Debug\Nuochoa.frmProduct.resources
+C:\Users\thamt\OneDrive\Máy tính\TheCoffeeHouse\B-n-N-c-Hoa\phatnguyen\obj\Debug\Nuochoa.frmStaff.resources
+C:\Users\thamt\OneDrive\Máy tính\TheCoffeeHouse\B-n-N-c-Hoa\phatnguyen\obj\Debug\Nuochoa.FrmTK.resources
+C:\Users\thamt\OneDrive\Máy tính\TheCoffeeHouse\B-n-N-c-Hoa\phatnguyen\obj\Debug\Nuochoa.frmLogin.resources
+C:\Users\thamt\OneDrive\Máy tính\TheCoffeeHouse\B-n-N-c-Hoa\phatnguyen\obj\Debug\Nuochoa.Properties.Resources.resources
+C:\Users\thamt\OneDrive\Máy tính\TheCoffeeHouse\B-n-N-c-Hoa\phatnguyen\obj\Debug\Nuochoa.frmSalary.resources
+C:\Users\thamt\OneDrive\Máy tính\TheCoffeeHouse\B-n-N-c-Hoa\phatnguyen\obj\Debug\Nuochoa.StaffControl.resources
+C:\Users\thamt\OneDrive\Máy tính\TheCoffeeHouse\B-n-N-c-Hoa\phatnguyen\obj\Debug\Nuochoa.csproj.GenerateResource.cache
+C:\Users\thamt\OneDrive\Máy tính\TheCoffeeHouse\B-n-N-c-Hoa\phatnguyen\obj\Debug\Nuochoa.csproj.CoreCompileInputs.cache
+C:\Users\thamt\OneDrive\Máy tính\TheCoffeeHouse\B-n-N-c-Hoa\phatnguyen\obj\Debug\Nuochoa.csproj.Up2Date
+C:\Users\thamt\OneDrive\Máy tính\TheCoffeeHouse\B-n-N-c-Hoa\phatnguyen\obj\Debug\Nuochoa.exe
+C:\Users\thamt\OneDrive\Máy tính\TheCoffeeHouse\B-n-N-c-Hoa\phatnguyen\obj\Debug\Nuochoa.pdb
