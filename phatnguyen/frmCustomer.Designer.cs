@@ -30,6 +30,7 @@
         {
             this.gbxIPIFCustomer = new System.Windows.Forms.GroupBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
             this.lblID = new System.Windows.Forms.Label();
             this.cbb = new System.Windows.Forms.ComboBox();
             this.cbxSearchCus = new System.Windows.Forms.ComboBox();
@@ -56,8 +57,8 @@
             this.dgvwCus = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnHideForm = new System.Windows.Forms.Button();
             this.btnOffCustomer = new System.Windows.Forms.Button();
+            this.btnHideForm = new System.Windows.Forms.Button();
             this.gbxIPIFCustomer.SuspendLayout();
             this.gbxCustomerList.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvwCus)).BeginInit();
@@ -67,6 +68,7 @@
             // gbxIPIFCustomer
             // 
             this.gbxIPIFCustomer.Controls.Add(this.label9);
+            this.gbxIPIFCustomer.Controls.Add(this.label22);
             this.gbxIPIFCustomer.Controls.Add(this.lblID);
             this.gbxIPIFCustomer.Controls.Add(this.cbb);
             this.gbxIPIFCustomer.Controls.Add(this.cbxSearchCus);
@@ -97,6 +99,7 @@
             this.gbxIPIFCustomer.TabIndex = 3;
             this.gbxIPIFCustomer.TabStop = false;
             this.gbxIPIFCustomer.Text = "Nhập thông tin";
+            this.gbxIPIFCustomer.Enter += new System.EventHandler(this.gbxIPIFCustomer_Enter);
             // 
             // label9
             // 
@@ -109,6 +112,18 @@
             this.label9.TabIndex = 21;
             this.label9.Text = "Loại khách hàng:";
             // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(1216, 19);
+            this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(34, 18);
+            this.label22.TabIndex = 18;
+            this.label22.Text = "ID :";
+            this.label22.Click += new System.EventHandler(this.lblID_Click);
+            // 
             // lblID
             // 
             this.lblID.AutoSize = true;
@@ -116,9 +131,9 @@
             this.lblID.Location = new System.Drawing.Point(1252, 19);
             this.lblID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblID.Name = "lblID";
-            this.lblID.Size = new System.Drawing.Size(24, 18);
+            this.lblID.Size = new System.Drawing.Size(0, 18);
             this.lblID.TabIndex = 18;
-            this.lblID.Text = "ID";
+            this.lblID.Click += new System.EventHandler(this.lblID_Click);
             // 
             // cbb
             // 
@@ -358,9 +373,10 @@
             this.label2.Location = new System.Drawing.Point(103, 64);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(122, 18);
+            this.label2.Size = new System.Drawing.Size(129, 18);
             this.label2.TabIndex = 0;
-            this.label2.Text = "ID Khách hàng:";
+            this.label2.Text = "Mã Khách hàng:";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // gbxCustomerList
             // 
@@ -399,6 +415,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1398, 62);
             this.panel2.TabIndex = 8;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
             // 
             // label1
@@ -412,20 +429,6 @@
             this.label1.Size = new System.Drawing.Size(410, 38);
             this.label1.TabIndex = 32;
             this.label1.Text = "QUẢN LÝ KHÁCH HÀNG";
-            // 
-            // btnHideForm
-            // 
-            this.btnHideForm.BackColor = System.Drawing.SystemColors.Control;
-            this.btnHideForm.FlatAppearance.BorderSize = 0;
-            this.btnHideForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHideForm.Image = global::Nuochoa.Properties.Resources.lose;
-            this.btnHideForm.Location = new System.Drawing.Point(1315, 10);
-            this.btnHideForm.Margin = new System.Windows.Forms.Padding(4);
-            this.btnHideForm.Name = "btnHideForm";
-            this.btnHideForm.Size = new System.Drawing.Size(43, 14);
-            this.btnHideForm.TabIndex = 20;
-            this.btnHideForm.UseVisualStyleBackColor = false;
-            this.btnHideForm.Click += new System.EventHandler(this.btnHideForm_Click);
             // 
             // btnOffCustomer
             // 
@@ -445,6 +448,20 @@
             this.btnOffCustomer.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnOffCustomer.UseVisualStyleBackColor = false;
             this.btnOffCustomer.Click += new System.EventHandler(this.btnOffCustomer_Click);
+            // 
+            // btnHideForm
+            // 
+            this.btnHideForm.BackColor = System.Drawing.SystemColors.Control;
+            this.btnHideForm.FlatAppearance.BorderSize = 0;
+            this.btnHideForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHideForm.Image = global::Nuochoa.Properties.Resources.lose;
+            this.btnHideForm.Location = new System.Drawing.Point(1315, 10);
+            this.btnHideForm.Margin = new System.Windows.Forms.Padding(4);
+            this.btnHideForm.Name = "btnHideForm";
+            this.btnHideForm.Size = new System.Drawing.Size(43, 14);
+            this.btnHideForm.TabIndex = 20;
+            this.btnHideForm.UseVisualStyleBackColor = false;
+            this.btnHideForm.Click += new System.EventHandler(this.btnHideForm_Click);
             // 
             // frmCustomer
             // 
@@ -495,7 +512,6 @@
         private System.Windows.Forms.Button btnOffCustomer;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label lblID;
-        private System.Windows.Forms.Button btnHideForm;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Label label8;
@@ -503,5 +519,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ComboBox cbb;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Button btnHideForm;
     }
 }
