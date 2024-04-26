@@ -66,11 +66,10 @@ namespace Nuochoa
 
         private void btnBaocao_Click(object sender, EventArgs e)
         {
-            this.Hide();
+        
             frmCustomer frm = new frmCustomer();
             frm.ShowDialog();
-            frm = null;
-            this.Show();
+            
         }
 
         private void btnThongke_Click(object sender, EventArgs e)
