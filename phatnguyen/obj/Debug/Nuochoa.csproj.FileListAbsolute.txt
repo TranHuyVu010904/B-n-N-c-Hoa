@@ -1,0 +1,83 @@
+C:\Users\NEIL\Downloads\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\phatnguyen\bin\Debug\EntityFramework.dll
+C:\Users\NEIL\Downloads\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\phatnguyen\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\NEIL\Downloads\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\phatnguyen\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\NEIL\Downloads\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\phatnguyen\bin\Debug\EntityFramework.xml
+C:\Users\NEIL\Downloads\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\phatnguyen\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\NEIL\Downloads\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\phatnguyen\obj\Debug\Nuochoa.csproj.GenerateResource.cache
+C:\Users\NEIL\Downloads\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\phatnguyen\obj\Debug\RdlCompile.cache
+C:\Users\NEIL\Downloads\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\phatnguyen\obj\Debug\RdlCompile.compiled
+C:\Users\NEIL\Downloads\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\phatnguyen\obj\Debug\Nuochoa.csproj.CoreCompileInputs.cache
+C:\Users\NEIL\Downloads\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\phatnguyen\obj\Debug\Nuochoa.csproj.CopyComplete
+C:\Users\NEIL\Downloads\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\phatnguyen\bin\Debug\Nuochoa.exe.config
+C:\Users\NEIL\Downloads\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\phatnguyen\bin\Debug\Nuochoa.exe
+C:\Users\NEIL\Downloads\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\phatnguyen\bin\Debug\Nuochoa.pdb
+C:\Users\NEIL\Downloads\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\phatnguyen\obj\Debug\Nuochoa.frmBill.resources
+C:\Users\NEIL\Downloads\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\phatnguyen\obj\Debug\Nuochoa.frmCustomer.resources
+C:\Users\NEIL\Downloads\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\phatnguyen\obj\Debug\Nuochoa.frmProduct.resources
+C:\Users\NEIL\Downloads\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\phatnguyen\obj\Debug\Nuochoa.frmStaff.resources
+C:\Users\NEIL\Downloads\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\phatnguyen\obj\Debug\Nuochoa.FrmTK.resources
+C:\Users\NEIL\Downloads\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\phatnguyen\obj\Debug\Nuochoa.frmWarehouse.resources
+C:\Users\NEIL\Downloads\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\phatnguyen\obj\Debug\Nuochoa.frmLogin.resources
+C:\Users\NEIL\Downloads\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\phatnguyen\obj\Debug\Nuochoa.Properties.Resources.resources
+C:\Users\NEIL\Downloads\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\phatnguyen\obj\Debug\Nuochoa.frmSalary.resources
+C:\Users\NEIL\Downloads\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\phatnguyen\obj\Debug\Nuochoa.StaffControl.resources
+C:\Users\NEIL\Downloads\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\phatnguyen\obj\Debug\Nuochoa.exe
+C:\Users\NEIL\Downloads\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\phatnguyen\obj\Debug\Nuochoa.pdb
+C:\Users\NEIL\Downloads\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\phatnguyen\obj\Debug\Nuochoa.csproj.AssemblyReference.cache
+C:\Users\NEIL\Downloads\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\phatnguyen\obj\Debug\Nuochoa.frmrpcs.resources
+C:\Users\NEIL\Downloads\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\phatnguyen\obj\Debug\Nuochoa.frmtkk.resources
+C:\Users\NEIL\Downloads\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\phatnguyen\obj\Debug\Nuochoa.frmtopkhoban.resources
+C:\Users\NEIL\Downloads\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\phatnguyen\obj\Debug\Nuochoa.frmtop.resources
+C:\Users\NEIL\Downloads\C#Nuochoa\C#Nuochoa\C#Nuochoa\phatnguyen\bin\Debug\Nuochoa.exe.config
+C:\Users\NEIL\Downloads\C#Nuochoa\C#Nuochoa\C#Nuochoa\phatnguyen\bin\Debug\Nuochoa.exe
+C:\Users\NEIL\Downloads\C#Nuochoa\C#Nuochoa\C#Nuochoa\phatnguyen\bin\Debug\Nuochoa.pdb
+C:\Users\NEIL\Downloads\C#Nuochoa\C#Nuochoa\C#Nuochoa\phatnguyen\bin\Debug\EntityFramework.dll
+C:\Users\NEIL\Downloads\C#Nuochoa\C#Nuochoa\C#Nuochoa\phatnguyen\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\NEIL\Downloads\C#Nuochoa\C#Nuochoa\C#Nuochoa\phatnguyen\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\NEIL\Downloads\C#Nuochoa\C#Nuochoa\C#Nuochoa\phatnguyen\bin\Debug\EntityFramework.xml
+C:\Users\NEIL\Downloads\C#Nuochoa\C#Nuochoa\C#Nuochoa\phatnguyen\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\NEIL\Downloads\C#Nuochoa\C#Nuochoa\C#Nuochoa\phatnguyen\obj\Debug\Nuochoa.csproj.AssemblyReference.cache
+C:\Users\NEIL\Downloads\C#Nuochoa\C#Nuochoa\C#Nuochoa\phatnguyen\obj\Debug\Nuochoa.frmBill.resources
+C:\Users\NEIL\Downloads\C#Nuochoa\C#Nuochoa\C#Nuochoa\phatnguyen\obj\Debug\Nuochoa.frmCustomer.resources
+C:\Users\NEIL\Downloads\C#Nuochoa\C#Nuochoa\C#Nuochoa\phatnguyen\obj\Debug\Nuochoa.frmProduct.resources
+C:\Users\NEIL\Downloads\C#Nuochoa\C#Nuochoa\C#Nuochoa\phatnguyen\obj\Debug\Nuochoa.frmrpcs.resources
+C:\Users\NEIL\Downloads\C#Nuochoa\C#Nuochoa\C#Nuochoa\phatnguyen\obj\Debug\Nuochoa.frmStaff.resources
+C:\Users\NEIL\Downloads\C#Nuochoa\C#Nuochoa\C#Nuochoa\phatnguyen\obj\Debug\Nuochoa.FrmTK.resources
+C:\Users\NEIL\Downloads\C#Nuochoa\C#Nuochoa\C#Nuochoa\phatnguyen\obj\Debug\Nuochoa.frmtkk.resources
+C:\Users\NEIL\Downloads\C#Nuochoa\C#Nuochoa\C#Nuochoa\phatnguyen\obj\Debug\Nuochoa.frmtop.resources
+C:\Users\NEIL\Downloads\C#Nuochoa\C#Nuochoa\C#Nuochoa\phatnguyen\obj\Debug\Nuochoa.frmtopkhoban.resources
+C:\Users\NEIL\Downloads\C#Nuochoa\C#Nuochoa\C#Nuochoa\phatnguyen\obj\Debug\Nuochoa.frmWarehouse.resources
+C:\Users\NEIL\Downloads\C#Nuochoa\C#Nuochoa\C#Nuochoa\phatnguyen\obj\Debug\Nuochoa.frmLogin.resources
+C:\Users\NEIL\Downloads\C#Nuochoa\C#Nuochoa\C#Nuochoa\phatnguyen\obj\Debug\Nuochoa.Properties.Resources.resources
+C:\Users\NEIL\Downloads\C#Nuochoa\C#Nuochoa\C#Nuochoa\phatnguyen\obj\Debug\Nuochoa.frmSalary.resources
+C:\Users\NEIL\Downloads\C#Nuochoa\C#Nuochoa\C#Nuochoa\phatnguyen\obj\Debug\Nuochoa.StaffControl.resources
+C:\Users\NEIL\Downloads\C#Nuochoa\C#Nuochoa\C#Nuochoa\phatnguyen\obj\Debug\Nuochoa.csproj.GenerateResource.cache
+C:\Users\NEIL\Downloads\C#Nuochoa\C#Nuochoa\C#Nuochoa\phatnguyen\obj\Debug\RdlCompile.cache
+C:\Users\NEIL\Downloads\C#Nuochoa\C#Nuochoa\C#Nuochoa\phatnguyen\obj\Debug\RdlCompile.compiled
+C:\Users\NEIL\Downloads\C#Nuochoa\C#Nuochoa\C#Nuochoa\phatnguyen\obj\Debug\Nuochoa.csproj.CoreCompileInputs.cache
+C:\Users\NEIL\Downloads\C#Nuochoa\C#Nuochoa\C#Nuochoa\phatnguyen\obj\Debug\Nuochoa.csproj.CopyComplete
+C:\Users\NEIL\Downloads\C#Nuochoa\C#Nuochoa\C#Nuochoa\phatnguyen\obj\Debug\Nuochoa.exe
+C:\Users\NEIL\Downloads\C#Nuochoa\C#Nuochoa\C#Nuochoa\phatnguyen\obj\Debug\Nuochoa.pdb
+C:\doan\C#Nuochoa\C#Nuochoa\C#Nuochoa\phatnguyen\obj\Debug\Nuochoa.csproj.AssemblyReference.cache
+C:\doan\C#Nuochoa\C#Nuochoa\C#Nuochoa\phatnguyen\obj\Debug\Nuochoa.exe
+C:\doan\C#Nuochoa\C#Nuochoa\C#Nuochoa\phatnguyen\obj\Debug\Nuochoa.pdb
+C:\doan\C#Nuochoa\C#Nuochoa\C#Nuochoa\phatnguyen\bin\Debug\Nuochoa.exe.config
+C:\doan\C#Nuochoa\C#Nuochoa\C#Nuochoa\phatnguyen\bin\Debug\Nuochoa.exe
+C:\doan\C#Nuochoa\C#Nuochoa\C#Nuochoa\phatnguyen\bin\Debug\Nuochoa.pdb
+C:\doan\C#Nuochoa\C#Nuochoa\C#Nuochoa\phatnguyen\bin\Debug\EntityFramework.dll
+C:\doan\C#Nuochoa\C#Nuochoa\C#Nuochoa\phatnguyen\bin\Debug\EntityFramework.SqlServer.dll
+C:\doan\C#Nuochoa\C#Nuochoa\C#Nuochoa\phatnguyen\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\doan\C#Nuochoa\C#Nuochoa\C#Nuochoa\phatnguyen\bin\Debug\EntityFramework.xml
+C:\doan\C#Nuochoa\C#Nuochoa\C#Nuochoa\phatnguyen\bin\Debug\EntityFramework.SqlServer.xml
+C:\doan\C#Nuochoa\C#Nuochoa\C#Nuochoa\phatnguyen\obj\Debug\Nuochoa.frmBill.resources
+C:\doan\C#Nuochoa\C#Nuochoa\C#Nuochoa\phatnguyen\obj\Debug\Nuochoa.frmCustomer.resources
+C:\doan\C#Nuochoa\C#Nuochoa\C#Nuochoa\phatnguyen\obj\Debug\Nuochoa.frmProduct.resources
+C:\doan\C#Nuochoa\C#Nuochoa\C#Nuochoa\phatnguyen\obj\Debug\Nuochoa.frmStaff.resources
+C:\doan\C#Nuochoa\C#Nuochoa\C#Nuochoa\phatnguyen\obj\Debug\Nuochoa.FrmTK.resources
+C:\doan\C#Nuochoa\C#Nuochoa\C#Nuochoa\phatnguyen\obj\Debug\Nuochoa.frmLogin.resources
+C:\doan\C#Nuochoa\C#Nuochoa\C#Nuochoa\phatnguyen\obj\Debug\Nuochoa.Properties.Resources.resources
+C:\doan\C#Nuochoa\C#Nuochoa\C#Nuochoa\phatnguyen\obj\Debug\Nuochoa.frmSalary.resources
+C:\doan\C#Nuochoa\C#Nuochoa\C#Nuochoa\phatnguyen\obj\Debug\Nuochoa.StaffControl.resources
+C:\doan\C#Nuochoa\C#Nuochoa\C#Nuochoa\phatnguyen\obj\Debug\Nuochoa.csproj.GenerateResource.cache
+C:\doan\C#Nuochoa\C#Nuochoa\C#Nuochoa\phatnguyen\obj\Debug\Nuochoa.csproj.CoreCompileInputs.cache
+C:\doan\C#Nuochoa\C#Nuochoa\C#Nuochoa\phatnguyen\obj\Debug\Nuochoa.csproj.Up2Date

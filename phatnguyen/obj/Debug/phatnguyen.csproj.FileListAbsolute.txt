@@ -1,0 +1,80 @@
+C:\Users\NguyenTienPhat\source\repos\phatnguyen\phatnguyen\bin\Debug\phatnguyen.exe.config
+C:\Users\NguyenTienPhat\source\repos\phatnguyen\phatnguyen\bin\Debug\phatnguyen.exe
+C:\Users\NguyenTienPhat\source\repos\phatnguyen\phatnguyen\bin\Debug\phatnguyen.pdb
+C:\Users\NguyenTienPhat\source\repos\phatnguyen\phatnguyen\obj\Debug\phatnguyen.frmLogin.resources
+C:\Users\NguyenTienPhat\source\repos\phatnguyen\phatnguyen\obj\Debug\phatnguyen.Properties.Resources.resources
+C:\Users\NguyenTienPhat\source\repos\phatnguyen\phatnguyen\obj\Debug\phatnguyen.csproj.GenerateResource.cache
+C:\Users\NguyenTienPhat\source\repos\phatnguyen\phatnguyen\obj\Debug\phatnguyen.csproj.CoreCompileInputs.cache
+C:\Users\NguyenTienPhat\source\repos\phatnguyen\phatnguyen\obj\Debug\phatnguyen.exe
+C:\Users\NguyenTienPhat\source\repos\phatnguyen\phatnguyen\obj\Debug\phatnguyen.pdb
+C:\Users\NguyenTienPhat\source\repos\phatnguyen\phatnguyen\obj\Debug\phatnguyen.FisrtCustomerControl.resources
+C:\Users\NguyenTienPhat\source\repos\phatnguyen\phatnguyen\obj\Debug\phatnguyen.ProductControl.resources
+C:\Users\NguyenTienPhat\source\repos\phatnguyen\phatnguyen\obj\Debug\phatnguyen.CustomerControl.resources
+C:\Users\NguyenTienPhat\source\repos\phatnguyen\phatnguyen\obj\Debug\phatnguyen.StaffControl.resources
+C:\Users\NguyenTienPhat\source\repos\phatnguyen\phatnguyen\obj\Debug\phatnguyen.BillControl.resources
+C:\Users\NguyenTienPhat\source\repos\phatnguyen\phatnguyen\bin\Debug\EntityFramework.dll
+C:\Users\NguyenTienPhat\source\repos\phatnguyen\phatnguyen\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\NguyenTienPhat\source\repos\phatnguyen\phatnguyen\bin\Debug\EntityFramework.xml
+C:\Users\NguyenTienPhat\source\repos\phatnguyen\phatnguyen\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\NguyenTienPhat\source\repos\phatnguyen\phatnguyen\obj\Debug\phatnguyen.csproj.CopyComplete
+C:\Users\NguyenTienPhat\source\repos\phatnguyen\phatnguyen\obj\Debug\phatnguyen.frmStaff.resources
+C:\Users\NguyenTienPhat\source\repos\phatnguyen\phatnguyen\obj\Debug\phatnguyen.frmCustomer.resources
+C:\Users\NguyenTienPhat\source\repos\phatnguyen\phatnguyen\obj\Debug\phatnguyen.frmProduct.resources
+C:\Users\NguyenTienPhat\source\repos\phatnguyen\phatnguyen\obj\Debug\phatnguyen.frmWarehouse.resources
+C:\Users\NguyenTienPhat\source\repos\phatnguyen\phatnguyen\obj\Debug\phatnguyen.frmBill.resources
+C:\Users\NguyenTienPhat\source\repos\phatnguyen\phatnguyen\obj\Debug\phatnguyen.frmHome.resources
+C:\Users\NguyenTienPhat\source\repos\phatnguyen\phatnguyen\obj\Debug\phatnguyen.frmSalary.resources
+C:\Users\kimxu\OneDrive\Desktop\ProjectHoanhanh1011\phatnguyen\phatnguyen\bin\Debug\phatnguyen.exe.config
+C:\Users\kimxu\OneDrive\Desktop\ProjectHoanhanh1011\phatnguyen\phatnguyen\bin\Debug\phatnguyen.exe
+C:\Users\kimxu\OneDrive\Desktop\ProjectHoanhanh1011\phatnguyen\phatnguyen\bin\Debug\phatnguyen.pdb
+C:\Users\kimxu\OneDrive\Desktop\ProjectHoanhanh1011\phatnguyen\phatnguyen\bin\Debug\EntityFramework.dll
+C:\Users\kimxu\OneDrive\Desktop\ProjectHoanhanh1011\phatnguyen\phatnguyen\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\kimxu\OneDrive\Desktop\ProjectHoanhanh1011\phatnguyen\phatnguyen\bin\Debug\EntityFramework.xml
+C:\Users\kimxu\OneDrive\Desktop\ProjectHoanhanh1011\phatnguyen\phatnguyen\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\kimxu\OneDrive\Desktop\ProjectHoanhanh1011\phatnguyen\phatnguyen\obj\Debug\phatnguyen.csprojAssemblyReference.cache
+C:\Users\kimxu\OneDrive\Desktop\ProjectHoanhanh1011\phatnguyen\phatnguyen\obj\Debug\phatnguyen.BillControl.resources
+C:\Users\kimxu\OneDrive\Desktop\ProjectHoanhanh1011\phatnguyen\phatnguyen\obj\Debug\phatnguyen.CustomerControl.resources
+C:\Users\kimxu\OneDrive\Desktop\ProjectHoanhanh1011\phatnguyen\phatnguyen\obj\Debug\phatnguyen.FisrtCustomerControl.resources
+C:\Users\kimxu\OneDrive\Desktop\ProjectHoanhanh1011\phatnguyen\phatnguyen\obj\Debug\phatnguyen.frmHome.resources
+C:\Users\kimxu\OneDrive\Desktop\ProjectHoanhanh1011\phatnguyen\phatnguyen\obj\Debug\phatnguyen.frmBill.resources
+C:\Users\kimxu\OneDrive\Desktop\ProjectHoanhanh1011\phatnguyen\phatnguyen\obj\Debug\phatnguyen.frmCustomer.resources
+C:\Users\kimxu\OneDrive\Desktop\ProjectHoanhanh1011\phatnguyen\phatnguyen\obj\Debug\phatnguyen.frmProduct.resources
+C:\Users\kimxu\OneDrive\Desktop\ProjectHoanhanh1011\phatnguyen\phatnguyen\obj\Debug\phatnguyen.frmStaff.resources
+C:\Users\kimxu\OneDrive\Desktop\ProjectHoanhanh1011\phatnguyen\phatnguyen\obj\Debug\phatnguyen.frmWarehouse.resources
+C:\Users\kimxu\OneDrive\Desktop\ProjectHoanhanh1011\phatnguyen\phatnguyen\obj\Debug\phatnguyen.frmLogin.resources
+C:\Users\kimxu\OneDrive\Desktop\ProjectHoanhanh1011\phatnguyen\phatnguyen\obj\Debug\phatnguyen.ProductControl.resources
+C:\Users\kimxu\OneDrive\Desktop\ProjectHoanhanh1011\phatnguyen\phatnguyen\obj\Debug\phatnguyen.Properties.Resources.resources
+C:\Users\kimxu\OneDrive\Desktop\ProjectHoanhanh1011\phatnguyen\phatnguyen\obj\Debug\phatnguyen.frmSalary.resources
+C:\Users\kimxu\OneDrive\Desktop\ProjectHoanhanh1011\phatnguyen\phatnguyen\obj\Debug\phatnguyen.StaffControl.resources
+C:\Users\kimxu\OneDrive\Desktop\ProjectHoanhanh1011\phatnguyen\phatnguyen\obj\Debug\phatnguyen.csproj.GenerateResource.cache
+C:\Users\kimxu\OneDrive\Desktop\ProjectHoanhanh1011\phatnguyen\phatnguyen\obj\Debug\phatnguyen.csproj.CoreCompileInputs.cache
+C:\Users\kimxu\OneDrive\Desktop\ProjectHoanhanh1011\phatnguyen\phatnguyen\obj\Debug\phatnguyen.csproj.CopyComplete
+C:\Users\kimxu\OneDrive\Desktop\ProjectHoanhanh1011\phatnguyen\phatnguyen\obj\Debug\phatnguyen.exe
+C:\Users\kimxu\OneDrive\Desktop\ProjectHoanhanh1011\phatnguyen\phatnguyen\obj\Debug\phatnguyen.pdb
+C:\Users\kimxu\OneDrive\Desktop\ProjectHoanhanh1011\phatnguyen\phatnguyen\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\NEIL\Downloads\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\phatnguyen\bin\Debug\phatnguyen.exe.config
+C:\Users\NEIL\Downloads\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\phatnguyen\bin\Debug\phatnguyen.exe
+C:\Users\NEIL\Downloads\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\phatnguyen\bin\Debug\phatnguyen.pdb
+C:\Users\NEIL\Downloads\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\phatnguyen\bin\Debug\EntityFramework.dll
+C:\Users\NEIL\Downloads\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\phatnguyen\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\NEIL\Downloads\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\phatnguyen\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\NEIL\Downloads\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\phatnguyen\bin\Debug\EntityFramework.xml
+C:\Users\NEIL\Downloads\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\phatnguyen\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\NEIL\Downloads\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\phatnguyen\obj\Debug\phatnguyen.csproj.AssemblyReference.cache
+C:\Users\NEIL\Downloads\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\phatnguyen\obj\Debug\phatnguyen.frmBill.resources
+C:\Users\NEIL\Downloads\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\phatnguyen\obj\Debug\phatnguyen.frmCustomer.resources
+C:\Users\NEIL\Downloads\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\phatnguyen\obj\Debug\phatnguyen.frmProduct.resources
+C:\Users\NEIL\Downloads\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\phatnguyen\obj\Debug\phatnguyen.frmStaff.resources
+C:\Users\NEIL\Downloads\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\phatnguyen\obj\Debug\phatnguyen.frmWarehouse.resources
+C:\Users\NEIL\Downloads\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\phatnguyen\obj\Debug\phatnguyen.frmLogin.resources
+C:\Users\NEIL\Downloads\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\phatnguyen\obj\Debug\phatnguyen.Properties.Resources.resources
+C:\Users\NEIL\Downloads\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\phatnguyen\obj\Debug\phatnguyen.frmSalary.resources
+C:\Users\NEIL\Downloads\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\phatnguyen\obj\Debug\phatnguyen.StaffControl.resources
+C:\Users\NEIL\Downloads\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\phatnguyen\obj\Debug\phatnguyen.csproj.GenerateResource.cache
+C:\Users\NEIL\Downloads\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\phatnguyen\obj\Debug\phatnguyen.csproj.CoreCompileInputs.cache
+C:\Users\NEIL\Downloads\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\phatnguyen\obj\Debug\phatnguyen.csproj.CopyComplete
+C:\Users\NEIL\Downloads\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\phatnguyen\obj\Debug\phatnguyen.exe
+C:\Users\NEIL\Downloads\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\phatnguyen\obj\Debug\phatnguyen.pdb
+C:\Users\NEIL\Downloads\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\phatnguyen\obj\Debug\RdlCompile.cache
+C:\Users\NEIL\Downloads\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\phatnguyen\obj\Debug\RdlCompile.compiled
+C:\Users\NEIL\Downloads\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\NguyenTienPhat-185050457- A04E\phatnguyen\obj\Debug\phatnguyen.FrmTK.resources

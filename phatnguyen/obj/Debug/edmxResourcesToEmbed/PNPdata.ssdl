@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PNPdataModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tbBill*">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CustomerID" Type="int" />
+    <Property Name="StaffID" Type="int" />
+    <Property Name="DOS" Type="datetime" />
+    <Property Name="Total" Type="float" />
+    <Property Name="CustomerCode" Type="nvarchar" MaxLength="20" />
+    <Property Name="StaffCode" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="tbBillDetails*">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProductID" Type="int" />
+    <Property Name="ProductName" Type="nvarchar" MaxLength="50" />
+    <Property Name="ProductCode" Type="nvarchar" MaxLength="20" />
+    <Property Name="BillID" Type="int" />
+    <Property Name="BillCode" Type="nvarchar" MaxLength="20" />
+    <Property Name="Amount" Type="int" />
+    <Property Name="UnitPrice" Type="float" />
+    <Property Name="Discount" Type="float" />
+    <Property Name="IntoMoney" Type="float" />
+  </EntityType>
+  <EntityType Name="tbCustomer*">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CustomerCode" Type="nvarchar" MaxLength="20" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Age" Type="datetime" />
+    <Property Name="Gender" Type="nvarchar" MaxLength="10" />
+    <Property Name="PhoneNumber" Type="nvarchar" MaxLength="12" />
+    <Property Name="Address" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbLogin">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Username" Type="nvarchar" MaxLength="50" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbProduct*">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProductCode" Type="nvarchar" MaxLength="20" />
+    <Property Name="ProductName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Size" Type="nvarchar" MaxLength="5" />
+    <Property Name="Color" Type="nvarchar" MaxLength="10" />
+    <Property Name="Amount" Type="int" />
+    <Property Name="ProductType" Type="nvarchar" MaxLength="10" />
+    <Property Name="Price" Type="float" />
+  </EntityType>
+  <EntityType Name="tbSalary*">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StaffID" Type="int" />
+    <Property Name="StaffCode" Type="nvarchar" MaxLength="20" />
+    <Property Name="StaffName" Type="nvarchar" MaxLength="20" />
+    <Property Name="Hours work" Type="int" />
+    <Property Name="Bonus" Type="float" />
+    <Property Name="Total Salary" Type="float" />
+  </EntityType>
+  <EntityType Name="tbStaff*">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StaffCode" Type="nvarchar" MaxLength="20" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Age" Type="datetime" />
+    <Property Name="Gender" Type="nvarchar" MaxLength="10" />
+    <Property Name="PhoneNumber" Type="nvarchar" MaxLength="12" />
+    <Property Name="Address" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbStatistic*">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Total amount of bill" Type="int" />
+    <Property Name="[Total salary of Staff" Type="float" />
+    <Property Name="Revuene" Type="float" />
+    <Property Name="Profit" Type="float" />
+    <Property Name="BillIDDetails" Type="int" />
+    <Property Name="SalaryID" Type="int" />
+    <Property Name="ProductID" Type="int" />
+  </EntityType>
+  <EntityType Name="tbWarehouse*">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProductID" Type="int" />
+    <Property Name="ProductName" Type="nvarchar" MaxLength="50" />
+    <Property Name="State" Type="nvarchar" MaxLength="50" />
+    <Property Name="ProductCode" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <Association Name="FK_tbBill_tbCustomer">
+    <End Role="tbCustomer*" Type="Self.tbCustomer*" Multiplicity="0..1" />
+    <End Role="tbBill*" Type="Self.tbBill*" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbCustomer*">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tbBill*">
+        <PropertyRef Name="CustomerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbBill_tbStaff">
+    <End Role="tbStaff*" Type="Self.tbStaff*" Multiplicity="0..1" />
+    <End Role="tbBill*" Type="Self.tbBill*" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbStaff*">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tbBill*">
+        <PropertyRef Name="StaffID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbBillDetails*_tbBill*">
+    <End Role="tbBill*" Type="Self.tbBill*" Multiplicity="0..1" />
+    <End Role="tbBillDetails*" Type="Self.tbBillDetails*" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbBill*">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tbBillDetails*">
+        <PropertyRef Name="BillID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbBillDetails_tbProduct">
+    <End Role="tbProduct*" Type="Self.tbProduct*" Multiplicity="0..1" />
+    <End Role="tbBillDetails*" Type="Self.tbBillDetails*" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbProduct*">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tbBillDetails*">
+        <PropertyRef Name="ProductID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbSalary_tbStaff">
+    <End Role="tbStaff*" Type="Self.tbStaff*" Multiplicity="0..1" />
+    <End Role="tbSalary*" Type="Self.tbSalary*" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbStaff*">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tbSalary*">
+        <PropertyRef Name="StaffID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbStatistic_tbBillDetails">
+    <End Role="tbBillDetails*" Type="Self.tbBillDetails*" Multiplicity="0..1" />
+    <End Role="tbStatistic*" Type="Self.tbStatistic*" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbBillDetails*">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tbStatistic*">
+        <PropertyRef Name="BillIDDetails" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbStatistic_tbProduct">
+    <End Role="tbProduct*" Type="Self.tbProduct*" Multiplicity="0..1" />
+    <End Role="tbStatistic*" Type="Self.tbStatistic*" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbProduct*">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tbStatistic*">
+        <PropertyRef Name="ProductID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbStatistic_tbSalary">
+    <End Role="tbSalary*" Type="Self.tbSalary*" Multiplicity="0..1" />
+    <End Role="tbStatistic*" Type="Self.tbStatistic*" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbSalary*">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tbStatistic*">
+        <PropertyRef Name="SalaryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbWarehouse_tbProduct">
+    <End Role="tbProduct*" Type="Self.tbProduct*" Multiplicity="0..1" />
+    <End Role="tbWarehouse*" Type="Self.tbWarehouse*" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbProduct*">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tbWarehouse*">
+        <PropertyRef Name="ProductID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="PNPdataModelStoreContainer">
+    <EntitySet Name="tbBill*" EntityType="Self.tbBill*" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbBillDetails*" EntityType="Self.tbBillDetails*" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbCustomer*" EntityType="Self.tbCustomer*" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbLogin" EntityType="Self.tbLogin" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbProduct*" EntityType="Self.tbProduct*" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbSalary*" EntityType="Self.tbSalary*" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbStaff*" EntityType="Self.tbStaff*" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbStatistic*" EntityType="Self.tbStatistic*" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbWarehouse*" EntityType="Self.tbWarehouse*" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_tbBill_tbCustomer" Association="Self.FK_tbBill_tbCustomer">
+      <End Role="tbCustomer*" EntitySet="tbCustomer*" />
+      <End Role="tbBill*" EntitySet="tbBill*" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbBill_tbStaff" Association="Self.FK_tbBill_tbStaff">
+      <End Role="tbStaff*" EntitySet="tbStaff*" />
+      <End Role="tbBill*" EntitySet="tbBill*" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbBillDetails*_tbBill*" Association="Self.FK_tbBillDetails*_tbBill*">
+      <End Role="tbBill*" EntitySet="tbBill*" />
+      <End Role="tbBillDetails*" EntitySet="tbBillDetails*" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbBillDetails_tbProduct" Association="Self.FK_tbBillDetails_tbProduct">
+      <End Role="tbProduct*" EntitySet="tbProduct*" />
+      <End Role="tbBillDetails*" EntitySet="tbBillDetails*" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbSalary_tbStaff" Association="Self.FK_tbSalary_tbStaff">
+      <End Role="tbStaff*" EntitySet="tbStaff*" />
+      <End Role="tbSalary*" EntitySet="tbSalary*" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbStatistic_tbBillDetails" Association="Self.FK_tbStatistic_tbBillDetails">
+      <End Role="tbBillDetails*" EntitySet="tbBillDetails*" />
+      <End Role="tbStatistic*" EntitySet="tbStatistic*" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbStatistic_tbProduct" Association="Self.FK_tbStatistic_tbProduct">
+      <End Role="tbProduct*" EntitySet="tbProduct*" />
+      <End Role="tbStatistic*" EntitySet="tbStatistic*" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbStatistic_tbSalary" Association="Self.FK_tbStatistic_tbSalary">
+      <End Role="tbSalary*" EntitySet="tbSalary*" />
+      <End Role="tbStatistic*" EntitySet="tbStatistic*" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbWarehouse_tbProduct" Association="Self.FK_tbWarehouse_tbProduct">
+      <End Role="tbProduct*" EntitySet="tbProduct*" />
+      <End Role="tbWarehouse*" EntitySet="tbWarehouse*" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
