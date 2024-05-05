@@ -69,7 +69,7 @@
             this.lblID.Location = new System.Drawing.Point(1304, 37);
             this.lblID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblID.Name = "lblID";
-            this.lblID.Size = new System.Drawing.Size(21, 17);
+            this.lblID.Size = new System.Drawing.Size(20, 16);
             this.lblID.TabIndex = 1;
             this.lblID.Text = "ID";
             this.lblID.Click += new System.EventHandler(this.lblID_Click);
@@ -106,6 +106,7 @@
             this.gbxIPIFStaff.TabIndex = 2;
             this.gbxIPIFStaff.TabStop = false;
             this.gbxIPIFStaff.Text = "Nhập thông tin";
+            this.gbxIPIFStaff.Enter += new System.EventHandler(this.gbxIPIFStaff_Enter);
             // 
             // btnSearch
             // 

@@ -396,7 +396,7 @@ namespace Nuochoa
                 {
                     if (cn.State == 0)
                     {
-                        cn.ConnectionString = @"Data Source=LAPTOP-Q2U43A9U;Initial Catalog=PNPdata;Integrated Security=True";
+                        cn.ConnectionString = @"Data Source=LAPTOP-VOLE2257\TRONGNHAN;Initial Catalog=PNPdata;Integrated Security=True";
                         cn.Open();
                     }
                 }
