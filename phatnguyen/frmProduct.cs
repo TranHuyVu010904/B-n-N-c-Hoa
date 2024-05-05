@@ -19,35 +19,18 @@ namespace Nuochoa
         {
             InitializeComponent();
         }
-
-
-
-      /*  public void Display()
+        private void DisplaytbProduct()
         {
-            using (PNPdataEntities _entity = new PNPdataEntities())
-            {
-                List<ProductInfo> _ProductList = new List<ProductInfo>();
-                _ProductList = _entity.tbProduct_.Select(x => new ProductInfo
-                {
-                    ID = x.ID,
-                    ProductCode = x.ProductCode,
-                    ProductName = x.ProductName,
-                    Size = x.Size,
-                    Color = x.Color,
-                    Amount = x.Amount,
-                    ProductType = x.ProductType,
-                    Price=x.Price
-                }).ToList();
-                dgvwProduct.DataSource = _ProductList;
+            string query = "SELECT * FROM [tbProduct*]";
+            DataTable dt = XemDL(query); 
 
-            }
-
-        }*/
+            dgvwProduct.DataSource = dt;
+        }
         private void DataGridViewWidth()
         {
-            DataGridViewColumn column = dgvwProduct.Columns[2];
+            DataGridViewColumn column = dgvwProduct.Columns[7];
             column.Width = 250;
-            DataGridViewColumn column1 = dgvwProduct.Columns[7];
+            DataGridViewColumn column1 = dgvwProduct.Columns[2];
             column1.Width = 200;
             dgvwProduct.Columns[0].Visible = false;
             dgvwProduct.Columns["Price"].DefaultCellStyle.Format = "0,00.## VND";
@@ -127,7 +110,7 @@ namespace Nuochoa
             cbxproducttype();
             cbxcolor();
             cbxsearchitem();
-            //Display();
+            DisplaytbProduct();
             DataGridViewWidth();
         }
 
@@ -164,142 +147,186 @@ namespace Nuochoa
         }
 
 
-        //Save
 
-       /* public bool SaveProduct(tbProduct_ tbProduct_)
-        {
-            bool result = false;
-            using (PNPdataEntities _entity = new PNPdataEntities())
-            {
-                _entity.tbProduct_.Add(tbProduct_);
-                _entity.SaveChanges();
-                result = true;
-            }
-            return result;
-        }*/
+
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            /*tbProduct_ tbproduct = new tbProduct_();
-            tbproduct.ProductCode = txtProductCode.Text;
-            tbproduct.ProductName = txtProductName.Text;
-            tbproduct.Size = cbxSize.Text;
-            tbproduct.Amount = Convert.ToInt32(txtAmount.Text);
-            tbproduct.Color = cbxColor.Text;
-            tbproduct.ProductType = cbxProductTypee.Text;
-            tbproduct.Price = Convert.ToDouble(txtPrice.Text);
-            bool result = SaveProduct(tbproduct);
-            if (result == true)
             {
-                MessageBox.Show("Thêm Thành Công", "Save", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                Display();
+                try
+                {
+                    
+                    string prCode = txtProductCode.Text;
+                    string prName = txtProductName.Text;
+                    string prSize = cbxSize.SelectedItem?.ToString();
+                    string prColor = cbxColor.SelectedItem?.ToString();
+                    string prType = cbxProductTypee.SelectedItem?.ToString();
+                    string prAmount = txtAmount.Text;
+                    double prPrice = Convert.ToDouble(txtPrice.Text);
+
+                    // Kiểm tra các giá trị bắt buộc
+                    if (String.IsNullOrEmpty(txtProductCode.Text) || String.IsNullOrEmpty(txtProductName.Text))
+{
+    MessageBox.Show("Vui lòng nhập đầy đủ thông tin sản phẩm!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+    return;
+}
+                    if (IsProductCodeExists(prCode))
+                    {
+                        MessageBox.Show("Mã sản phẩm đã tồn tại trong cơ sở dữ liệu!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return; // Không thực hiện thêm nữa nếu mã sản phẩm đã tồn tại
+                    }
+
+                    // Xây dựng câu lệnh SQL INSERT
+                    string sqlInsert = string.Format("INSERT INTO [tbProduct*] (ProductCode, ProductName, Size, Color, ProductType, Amount, Price) \r\nVALUES ('{0}', N'{1}', N'{2}', N'{3}', N'{4}', '{5}', '{6}')",
+                                                      prCode, prName, prSize, prColor, prType, prAmount, prPrice);
+
+                    // Thực thi câu lệnh INSERT
+                    ThucThiDl(sqlInsert);
+
+                    // Hiển thị thông báo khi thêm thành công
+                    MessageBox.Show("Thêm thông tin sản phẩm thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    // Sau khi thêm, làm mới các trường nhập liệu
+                    ClearFields();
+
+                    // Sau khi thêm, hiển thị lại danh sách sản phẩm
+                    DisplaytbProduct();
+
+                    // Cập nhật lại chiều rộng của các cột trong DataGridView (nếu cần)
+                    DataGridViewWidth();
+                }
+                catch (Exception ex)
+                {
+                    // Hiển thị thông báo khi có lỗi xảy ra
+                    MessageBox.Show("Lỗi khi thêm thông tin sản phẩm: " + ex.ToString(), "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+        private bool IsProductCodeExists(string productCode, int productId = 0)
+        {
+            string query = string.Format("SELECT COUNT(*) FROM [tbProduct*] WHERE ProductCode = '{0}'", productCode);
+            if (productId > 0)
+            {
+                query += string.Format(" AND ID <> {0}", productId);
+            }
+
+            DataTable dt = XemDL(query);
+            int count = Convert.ToInt32(dt.Rows[0][0]);
+            return count > 0;
+        }
+
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            if (dgvwProduct.SelectedRows.Count > 0)
+            {
+                // Lấy ID của khách hàng từ hàng được chọn trong DataGridView
+                int ProductID = Convert.ToInt32(dgvwProduct.SelectedRows[0].Cells["ID"].Value);
+
+                // Xác nhận việc xóa khách hàng từ người dùng
+                DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn xóa khách hàng này?", "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (result == DialogResult.Yes)
+                {
+                    try
+                    {
+                        // Tạo câu lệnh SQL DELETE
+                        string sqlDelete = string.Format("DELETE FROM [tbProduct*] WHERE ID = {0}", ProductID);
+
+                        // Thực thi câu lệnh DELETE
+                        ThucThiDl(sqlDelete);
+
+                        // Hiển thị thông báo khi xóa thành công
+                        MessageBox.Show("Xóa khách hàng thành công!");
+
+                        // Hiển thị lại danh sách khách hàng sau khi xóa
+                        DisplaytbProduct();
+                    }
+                    catch (Exception ex)
+                    {
+                        // Hiển thị thông báo khi có lỗi xảy ra
+                        MessageBox.Show("Lỗi khi xóa khách hàng: " + ex.Message);
+                    }
+                }
             }
             else
             {
-                MessageBox.Show("Please try again?", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                // Hiển thị thông báo nếu không có khách hàng nào được chọn
+                MessageBox.Show("Vui lòng chọn một khách hàng để xóa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            ClearFields();*/
+        }
+        private bool IsCustomerCodeExists(string prCode, int ProductID = 0)
+        {
+            string query = string.Format("SELECT COUNT(*) FROM [tbProduct*] WHERE ProductCode = '{0}'", prCode);
+            if (ProductID > 0)
+            {
+                query += string.Format(" AND ID <> {0}", ProductID);
+            }
+
+            DataTable dt = XemDL(query);
+            int count = Convert.ToInt32(dt.Rows[0][0]);
+            return count > 0;
         }
 
-        //DELETE
-       /* public bool DeleteProduct(int id)
-        {
-            bool result = false;
-            try
-            {
-                using (PNPdataEntities _entity = new PNPdataEntities())
-                {
-                    tbProduct_ _product = _entity.tbProduct_.Find(id);
-                    if (_product != null)
-                    {
-                        _entity.tbProduct_.Remove(_product);
-                        _entity.SaveChanges();
-                        result = true;
-                    }
-                    else
-                    {
-                        result = false;
-                    }
-                }
-            }
-            catch
-            {
-                result = false;
-            }
-            return result;
-        }
-*/
-        private void btnDelete_Click(object sender, EventArgs e)
-        {
-           /* try
-            {
-                int idproduct = Convert.ToInt32(lblID.Text);
-                bool result = DeleteProduct(idproduct);
-                if (result == true)
-                {
-                    MessageBox.Show("Xóa Thành Công", "Delete", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    ClearFields();
-                    Display();
-                }
-                else
-                {
-                    MessageBox.Show("Lỗi", "Delete", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Please try again?\n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }*/
-        }
-
-        //UPDATE
-/*        public bool UpdateProduct(tbProduct_ stp)
-        {
-            bool result = false;
-            using (PNPdataEntities _entity = new PNPdataEntities())
-            {
-                tbProduct_ _product = _entity.tbProduct_.Where(x => x.ID == stp.ID).Select(x => x).FirstOrDefault();
-                _product.ProductCode = stp.ProductCode;
-                _product.ProductName = stp.ProductName;
-                _product.Size = stp.Size;
-                _product.Color = stp.Color;
-                _product.Amount = stp.Amount;
-                _product.ProductType = stp.ProductType;
-                _product.Price = stp.Price;
-                _entity.SaveChanges();
-                result = true;
-            }
-            return result;
-        }
-*/
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            /*try
+            if (!string.IsNullOrEmpty(lblID.Text))
             {
-                tbProduct_ stp = new tbProduct_();
-                stp.ID = Convert.ToInt32(lblID.Text);
-                stp.ProductCode = txtProductCode.Text;
-                stp.ProductName = txtProductName.Text;
-                stp.Size = cbxSize.SelectedItem.ToString();
-                stp.Color = cbxColor.SelectedItem.ToString();
-                stp.Amount = Convert.ToInt32(txtAmount.Text);
-                stp.ProductType = cbxProductTypee.SelectedItem.ToString();
-                stp.Price = Convert.ToDouble(txtPrice.Text);
-                bool result = UpdateProduct(stp);
-                if (result == true)
+                try
                 {
-                    MessageBox.Show("Cập Nhật Thành Công", "Save", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    Display();
+                    int productId = int.Parse(lblID.Text);
+                    string prCode = txtProductCode.Text;
+                    string prName = txtProductName.Text;
+                    string prSize = cbxSize.SelectedItem?.ToString();
+                    string prColor = cbxColor.SelectedItem?.ToString();
+                    string prType = cbxProductTypee.SelectedItem?.ToString();
+                    string prAmount = txtAmount.Text;
+                    double prPrice = Convert.ToDouble(txtPrice.Text);
+
+                    // Kiểm tra các giá trị bắt buộc
+                    if (String.IsNullOrEmpty(txtProductCode.Text) || String.IsNullOrEmpty(txtProductName.Text))
+                    {
+                        MessageBox.Show("Vui lòng nhập đầy đủ thông tin sản phẩm!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+                    }
+
+                    // Kiểm tra mã sản phẩm đã tồn tại trong cơ sở dữ liệu (trừ sản phẩm đang cập nhật)
+                    if (IsProductCodeExists(prCode, productId))
+                    {
+                        MessageBox.Show("Mã sản phẩm đã tồn tại trong cơ sở dữ liệu!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+                    }
+
+                    // Xây dựng câu lệnh SQL UPDATE
+                    string sqlUpdate = string.Format("UPDATE [tbProduct*] SET ProductCode = '{0}', ProductName = N'{1}', Size = N'{2}', Color = N'{3}', ProductType = N'{4}', Amount = '{5}', Price = '{6}' WHERE ID = {7}",
+                                                      prCode, prName, prSize, prColor, prType, prAmount, prPrice, productId);
+
+                    // Thực thi câu lệnh UPDATE
+                    ThucThiDl(sqlUpdate);
+
+                    // Hiển thị thông báo khi cập nhật thành công
+                    MessageBox.Show("Cập nhật thông tin sản phẩm thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    // Sau khi cập nhật, làm mới các trường nhập liệu
+                    ClearFields();
+
+                    // Sau khi cập nhật, hiển thị lại danh sách sản phẩm
+                    DisplaytbProduct();
+
+                    // Cập nhật lại chiều rộng của các cột trong DataGridView (nếu cần)
+                    DataGridViewWidth();
                 }
-                else
+                catch (Exception ex)
                 {
-                    MessageBox.Show("Please try again?", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    // Hiển thị thông báo khi có lỗi xảy ra
+                    MessageBox.Show("Lỗi khi cập nhật thông tin sản phẩm: " + ex.ToString(), "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show("Please try again?\n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }*/
+                // Hiển thị thông báo nếu không có sản phẩm nào được chọn để cập nhật
+                MessageBox.Show("Vui lòng chọn một sản phẩm để cập nhật!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         //Close
@@ -363,19 +390,22 @@ namespace Nuochoa
         public SqlConnection cn = new SqlConnection();
         public void ketnoi()
         {
-            try
-            {
-                if (cn.State == 0)
+           
+            
+                try
                 {
-                    cn.ConnectionString = @"Data Source=LAPTOP-Q2U43A9U;Initial Catalog=PNPdata;Integrated Security=True";
-                    cn.Open();
+                    if (cn.State == 0)
+                    {
+                        cn.ConnectionString = @"Data Source=LAPTOP-Q2U43A9U;Initial Catalog=PNPdata;Integrated Security=True";
+                        cn.Open();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
                 }
             }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-        }
+        
         public void Ngatketnoi()
         {
             if (cn.State != 0)
@@ -393,8 +423,6 @@ namespace Nuochoa
             adap.Fill(dt);
 
             return dt;
-
-            //Ngatketnoi();
         }
         public SqlCommand ThucThiDl(string sql)
         {
@@ -453,6 +481,36 @@ namespace Nuochoa
         }
 
         private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtProductCode_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtProductName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbxSize_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbxColor_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtAmount_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gbxIPIFProduct_Enter(object sender, EventArgs e)
         {
 
         }
