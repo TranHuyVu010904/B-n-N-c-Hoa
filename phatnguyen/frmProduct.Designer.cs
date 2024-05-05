@@ -31,12 +31,15 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmProduct));
             this.panel2 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
+            this.btnOffPRO = new System.Windows.Forms.Button();
+            this.btnHideForm = new System.Windows.Forms.Button();
             this.gbxIPIFProduct = new System.Windows.Forms.GroupBox();
             this.ckb1 = new System.Windows.Forms.CheckBox();
             this.ckb2 = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
             this.cbxProductTypee = new System.Windows.Forms.ComboBox();
             this.lblID = new System.Windows.Forms.Label();
+            this.btnSearch = new System.Windows.Forms.Button();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.cbxSearchProduct = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -44,6 +47,10 @@
             this.txtPrice = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.cbxColor = new System.Windows.Forms.ComboBox();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
             this.cbxSize = new System.Windows.Forms.ComboBox();
             this.txtProductName = new System.Windows.Forms.TextBox();
             this.txtProductCode = new System.Windows.Forms.TextBox();
@@ -55,13 +62,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.gbxProductList = new System.Windows.Forms.GroupBox();
             this.dgvwProduct = new System.Windows.Forms.DataGridView();
-            this.btnSearch = new System.Windows.Forms.Button();
-            this.btnUpdate = new System.Windows.Forms.Button();
-            this.btnClose = new System.Windows.Forms.Button();
-            this.btnDelete = new System.Windows.Forms.Button();
-            this.btnSave = new System.Windows.Forms.Button();
-            this.btnOffPRO = new System.Windows.Forms.Button();
-            this.btnHideForm = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.gbxIPIFProduct.SuspendLayout();
             this.gbxProductList.SuspendLayout();
@@ -90,14 +91,47 @@
             this.label10.Location = new System.Drawing.Point(560, 13);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(348, 44);
+            this.label10.Size = new System.Drawing.Size(344, 42);
             this.label10.TabIndex = 33;
             this.label10.Text = "NHẬP HÀNG HÓA";
+            // 
+            // btnOffPRO
+            // 
+            this.btnOffPRO.BackgroundImage = global::Nuochoa.Properties.Resources.cv;
+            this.btnOffPRO.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnOffPRO.FlatAppearance.BorderSize = 0;
+            this.btnOffPRO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOffPRO.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOffPRO.ForeColor = System.Drawing.Color.White;
+            this.btnOffPRO.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnOffPRO.Location = new System.Drawing.Point(1370, 13);
+            this.btnOffPRO.Margin = new System.Windows.Forms.Padding(4);
+            this.btnOffPRO.Name = "btnOffPRO";
+            this.btnOffPRO.Size = new System.Drawing.Size(43, 30);
+            this.btnOffPRO.TabIndex = 21;
+            this.btnOffPRO.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnOffPRO.UseVisualStyleBackColor = true;
+            this.btnOffPRO.Click += new System.EventHandler(this.btnOffPRO_Click);
+            // 
+            // btnHideForm
+            // 
+            this.btnHideForm.BackColor = System.Drawing.SystemColors.Control;
+            this.btnHideForm.FlatAppearance.BorderSize = 0;
+            this.btnHideForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHideForm.Image = global::Nuochoa.Properties.Resources.lose;
+            this.btnHideForm.Location = new System.Drawing.Point(1319, 21);
+            this.btnHideForm.Margin = new System.Windows.Forms.Padding(4);
+            this.btnHideForm.Name = "btnHideForm";
+            this.btnHideForm.Size = new System.Drawing.Size(43, 11);
+            this.btnHideForm.TabIndex = 20;
+            this.btnHideForm.UseVisualStyleBackColor = false;
+            this.btnHideForm.Click += new System.EventHandler(this.btnHideForm_Click);
             // 
             // gbxIPIFProduct
             // 
             this.gbxIPIFProduct.AutoSize = true;
             this.gbxIPIFProduct.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.gbxIPIFProduct.Controls.Add(this.label11);
             this.gbxIPIFProduct.Controls.Add(this.ckb1);
             this.gbxIPIFProduct.Controls.Add(this.ckb2);
             this.gbxIPIFProduct.Controls.Add(this.label1);
@@ -132,6 +166,7 @@
             this.gbxIPIFProduct.TabIndex = 10;
             this.gbxIPIFProduct.TabStop = false;
             this.gbxIPIFProduct.Text = "Nhập thông tin";
+            this.gbxIPIFProduct.Enter += new System.EventHandler(this.gbxIPIFProduct_Enter);
             // 
             // ckb1
             // 
@@ -184,9 +219,21 @@
             this.lblID.Location = new System.Drawing.Point(1272, 38);
             this.lblID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblID.Name = "lblID";
-            this.lblID.Size = new System.Drawing.Size(28, 20);
+            this.lblID.Size = new System.Drawing.Size(0, 20);
             this.lblID.TabIndex = 13;
-            this.lblID.Text = "ID";
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.FlatAppearance.BorderSize = 0;
+            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnSearch.Image")));
+            this.btnSearch.Location = new System.Drawing.Point(1303, 312);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(34, 28);
+            this.btnSearch.TabIndex = 19;
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // txtSearch
             // 
@@ -225,6 +272,7 @@
             this.txtAmount.Name = "txtAmount";
             this.txtAmount.Size = new System.Drawing.Size(349, 22);
             this.txtAmount.TabIndex = 11;
+            this.txtAmount.TextChanged += new System.EventHandler(this.txtAmount_TextChanged);
             // 
             // txtPrice
             // 
@@ -254,6 +302,75 @@
             this.cbxColor.Name = "cbxColor";
             this.cbxColor.Size = new System.Drawing.Size(349, 24);
             this.cbxColor.TabIndex = 9;
+            this.cbxColor.SelectedIndexChanged += new System.EventHandler(this.cbxColor_SelectedIndexChanged);
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.Image = global::Nuochoa.Properties.Resources.update;
+            this.btnUpdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUpdate.Location = new System.Drawing.Point(1017, 359);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(151, 45);
+            this.btnUpdate.TabIndex = 15;
+            this.btnUpdate.Text = "CẬP NHẬT";
+            this.btnUpdate.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            // 
+            // btnClose
+            // 
+            this.btnClose.BackColor = System.Drawing.Color.Red;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.Image = global::Nuochoa.Properties.Resources.utilities_reset;
+            this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnClose.Location = new System.Drawing.Point(1166, 359);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(4);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(151, 45);
+            this.btnClose.TabIndex = 16;
+            this.btnClose.Text = "CLEAR";
+            this.btnClose.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.Image = global::Nuochoa.Properties.Resources.xoa;
+            this.btnDelete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDelete.Location = new System.Drawing.Point(837, 359);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(186, 45);
+            this.btnDelete.TabIndex = 14;
+            this.btnDelete.Text = "XÓA SẢN PHẨM";
+            this.btnDelete.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // btnSave
+            // 
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.Image = global::Nuochoa.Properties.Resources.addd;
+            this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSave.Location = new System.Drawing.Point(642, 359);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(199, 45);
+            this.btnSave.TabIndex = 13;
+            this.btnSave.Text = "THÊM SẢN PHẨM";
+            this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // cbxSize
             // 
@@ -263,6 +380,7 @@
             this.cbxSize.Name = "cbxSize";
             this.cbxSize.Size = new System.Drawing.Size(349, 24);
             this.cbxSize.TabIndex = 8;
+            this.cbxSize.SelectedIndexChanged += new System.EventHandler(this.cbxSize_SelectedIndexChanged);
             // 
             // txtProductName
             // 
@@ -271,6 +389,7 @@
             this.txtProductName.Name = "txtProductName";
             this.txtProductName.Size = new System.Drawing.Size(349, 22);
             this.txtProductName.TabIndex = 7;
+            this.txtProductName.TextChanged += new System.EventHandler(this.txtProductName_TextChanged);
             // 
             // txtProductCode
             // 
@@ -279,6 +398,7 @@
             this.txtProductCode.Name = "txtProductCode";
             this.txtProductCode.Size = new System.Drawing.Size(349, 22);
             this.txtProductCode.TabIndex = 6;
+            this.txtProductCode.TextChanged += new System.EventHandler(this.txtProductCode_TextChanged);
             // 
             // label7
             // 
@@ -373,118 +493,16 @@
             this.dgvwProduct.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvwProduct_CellClick);
             this.dgvwProduct.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvwProduct_CellContentClick);
             // 
-            // btnSearch
+            // label11
             // 
-            this.btnSearch.FlatAppearance.BorderSize = 0;
-            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnSearch.Image")));
-            this.btnSearch.Location = new System.Drawing.Point(1303, 312);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(4);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(34, 28);
-            this.btnSearch.TabIndex = 19;
-            this.btnSearch.UseVisualStyleBackColor = true;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.Image = global::Nuochoa.Properties.Resources.update;
-            this.btnUpdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUpdate.Location = new System.Drawing.Point(1017, 359);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(151, 45);
-            this.btnUpdate.TabIndex = 15;
-            this.btnUpdate.Text = "CẬP NHẬT";
-            this.btnUpdate.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnUpdate.UseVisualStyleBackColor = false;
-            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
-            // 
-            // btnClose
-            // 
-            this.btnClose.BackColor = System.Drawing.Color.Red;
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.Image = global::Nuochoa.Properties.Resources.utilities_reset;
-            this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClose.Location = new System.Drawing.Point(1166, 359);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(4);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(151, 45);
-            this.btnClose.TabIndex = 16;
-            this.btnClose.Text = "CLEAR";
-            this.btnClose.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnClose.UseVisualStyleBackColor = false;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.Image = global::Nuochoa.Properties.Resources.xoa;
-            this.btnDelete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDelete.Location = new System.Drawing.Point(837, 359);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(4);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(186, 45);
-            this.btnDelete.TabIndex = 14;
-            this.btnDelete.Text = "XÓA SẢN PHẨM";
-            this.btnDelete.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnDelete.UseVisualStyleBackColor = false;
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
-            // 
-            // btnSave
-            // 
-            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Image = global::Nuochoa.Properties.Resources.addd;
-            this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSave.Location = new System.Drawing.Point(642, 359);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(4);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(199, 45);
-            this.btnSave.TabIndex = 13;
-            this.btnSave.Text = "THÊM SẢN PHẨM";
-            this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSave.UseVisualStyleBackColor = false;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
-            // btnOffPRO
-            // 
-            this.btnOffPRO.BackgroundImage = global::Nuochoa.Properties.Resources.cv;
-            this.btnOffPRO.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnOffPRO.FlatAppearance.BorderSize = 0;
-            this.btnOffPRO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOffPRO.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOffPRO.ForeColor = System.Drawing.Color.White;
-            this.btnOffPRO.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnOffPRO.Location = new System.Drawing.Point(1370, 13);
-            this.btnOffPRO.Margin = new System.Windows.Forms.Padding(4);
-            this.btnOffPRO.Name = "btnOffPRO";
-            this.btnOffPRO.Size = new System.Drawing.Size(43, 30);
-            this.btnOffPRO.TabIndex = 21;
-            this.btnOffPRO.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnOffPRO.UseVisualStyleBackColor = true;
-            this.btnOffPRO.Click += new System.EventHandler(this.btnOffPRO_Click);
-            // 
-            // btnHideForm
-            // 
-            this.btnHideForm.BackColor = System.Drawing.SystemColors.Control;
-            this.btnHideForm.FlatAppearance.BorderSize = 0;
-            this.btnHideForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHideForm.Image = global::Nuochoa.Properties.Resources.lose;
-            this.btnHideForm.Location = new System.Drawing.Point(1319, 21);
-            this.btnHideForm.Margin = new System.Windows.Forms.Padding(4);
-            this.btnHideForm.Name = "btnHideForm";
-            this.btnHideForm.Size = new System.Drawing.Size(43, 11);
-            this.btnHideForm.TabIndex = 20;
-            this.btnHideForm.UseVisualStyleBackColor = false;
-            this.btnHideForm.Click += new System.EventHandler(this.btnHideForm_Click);
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(1236, 38);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(34, 20);
+            this.label11.TabIndex = 28;
+            this.label11.Text = "ID:";
             // 
             // frmProduct
             // 
@@ -547,5 +565,6 @@
         private System.Windows.Forms.CheckBox ckb2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
     }
 }
