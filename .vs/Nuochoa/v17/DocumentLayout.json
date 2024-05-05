@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "C:\\gitbanhang\\B-n-N-c-Hoa\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|c:\\gitbanhang\\b-n-n-c-hoa\\phatnguyen\\frmstaff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|solutionrelative:phatnguyen\\frmstaff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|c:\\gitbanhang\\b-n-n-c-hoa\\phatnguyen\\frmstaff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|C:\\gitbanhang\\B-n-N-c-Hoa\\phatnguyen\\frmstaff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|solutionrelative:phatnguyen\\frmstaff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|c:\\gitbanhang\\b-n-n-c-hoa\\phatnguyen\\frmcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|solutionrelative:phatnguyen\\frmcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|c:\\gitbanhang\\b-n-n-c-hoa\\phatnguyen\\frmcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|solutionrelative:phatnguyen\\frmcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|c:\\gitbanhang\\b-n-n-c-hoa\\phatnguyen\\frmstaff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|solutionrelative:phatnguyen\\frmstaff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|C:\\gitbanhang\\B-n-N-c-Hoa\\phatnguyen\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,62 +22,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\gitbanhang\\B-n-N-c-Hoa\\phatnguyen\\Program.cs",
               "RelativeDocumentMoniker": "phatnguyen\\Program.cs",
               "ToolTip": "C:\\gitbanhang\\B-n-N-c-Hoa\\phatnguyen\\Program.cs",
               "RelativeToolTip": "phatnguyen\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAoAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-26T05:12:41.437Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "frmCustomer.cs",
-              "DocumentMoniker": "C:\\gitbanhang\\B-n-N-c-Hoa\\phatnguyen\\frmCustomer.cs",
-              "RelativeDocumentMoniker": "phatnguyen\\frmCustomer.cs",
-              "ToolTip": "C:\\gitbanhang\\B-n-N-c-Hoa\\phatnguyen\\frmCustomer.cs",
-              "RelativeToolTip": "phatnguyen\\frmCustomer.cs",
-              "ViewState": "AQIAAPwAAAAAAAAAAAAewAkBAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T03:31:37.121Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "frmCustomer.cs [Design]",
-              "DocumentMoniker": "C:\\gitbanhang\\B-n-N-c-Hoa\\phatnguyen\\frmCustomer.cs",
-              "RelativeDocumentMoniker": "phatnguyen\\frmCustomer.cs",
-              "ToolTip": "C:\\gitbanhang\\B-n-N-c-Hoa\\phatnguyen\\frmCustomer.cs [Design]",
-              "RelativeToolTip": "phatnguyen\\frmCustomer.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T03:31:28.264Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "frmStaff.cs",
               "DocumentMoniker": "C:\\gitbanhang\\B-n-N-c-Hoa\\phatnguyen\\frmStaff.cs",
               "RelativeDocumentMoniker": "phatnguyen\\frmStaff.cs",
               "ToolTip": "C:\\gitbanhang\\B-n-N-c-Hoa\\phatnguyen\\frmStaff.cs",
               "RelativeToolTip": "phatnguyen\\frmStaff.cs",
-              "ViewState": "AQIAAMABAAAAAAAAAAAcwNcBAAAJAAAA",
+              "ViewState": "AQIAAMABAAAAAAAAAAA2wMsBAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-05T03:31:06.06Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "frmStaff.cs [Design]",
               "DocumentMoniker": "C:\\gitbanhang\\B-n-N-c-Hoa\\phatnguyen\\frmStaff.cs",
               "RelativeDocumentMoniker": "phatnguyen\\frmStaff.cs",
