@@ -388,5 +388,15 @@ namespace Nuochoa
         {
 
         }
+
+        private void cbb_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dtpDOB_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

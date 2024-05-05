@@ -57,8 +57,8 @@
             this.dgvwCus = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnOffCustomer = new System.Windows.Forms.Button();
             this.btnHideForm = new System.Windows.Forms.Button();
+            this.btnOffCustomer = new System.Windows.Forms.Button();
             this.gbxIPIFCustomer.SuspendLayout();
             this.gbxCustomerList.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvwCus)).BeginInit();
@@ -147,6 +147,7 @@
             this.cbb.Name = "cbb";
             this.cbb.Size = new System.Drawing.Size(340, 24);
             this.cbb.TabIndex = 20;
+            this.cbb.SelectedIndexChanged += new System.EventHandler(this.cbb_SelectedIndexChanged);
             // 
             // cbxSearchCus
             // 
@@ -267,6 +268,7 @@
             this.dtpDOB.Name = "dtpDOB";
             this.dtpDOB.Size = new System.Drawing.Size(349, 22);
             this.dtpDOB.TabIndex = 9;
+            this.dtpDOB.ValueChanged += new System.EventHandler(this.dtpDOB_ValueChanged);
             // 
             // cbxGender
             // 
@@ -430,6 +432,20 @@
             this.label1.TabIndex = 32;
             this.label1.Text = "QUẢN LÝ KHÁCH HÀNG";
             // 
+            // btnHideForm
+            // 
+            this.btnHideForm.BackColor = System.Drawing.SystemColors.Control;
+            this.btnHideForm.FlatAppearance.BorderSize = 0;
+            this.btnHideForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHideForm.Image = global::Nuochoa.Properties.Resources.lose;
+            this.btnHideForm.Location = new System.Drawing.Point(1315, 10);
+            this.btnHideForm.Margin = new System.Windows.Forms.Padding(4);
+            this.btnHideForm.Name = "btnHideForm";
+            this.btnHideForm.Size = new System.Drawing.Size(43, 14);
+            this.btnHideForm.TabIndex = 20;
+            this.btnHideForm.UseVisualStyleBackColor = false;
+            this.btnHideForm.Click += new System.EventHandler(this.btnHideForm_Click);
+            // 
             // btnOffCustomer
             // 
             this.btnOffCustomer.BackColor = System.Drawing.Color.LightCyan;
@@ -448,20 +464,6 @@
             this.btnOffCustomer.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnOffCustomer.UseVisualStyleBackColor = false;
             this.btnOffCustomer.Click += new System.EventHandler(this.btnOffCustomer_Click);
-            // 
-            // btnHideForm
-            // 
-            this.btnHideForm.BackColor = System.Drawing.SystemColors.Control;
-            this.btnHideForm.FlatAppearance.BorderSize = 0;
-            this.btnHideForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHideForm.Image = global::Nuochoa.Properties.Resources.lose;
-            this.btnHideForm.Location = new System.Drawing.Point(1315, 10);
-            this.btnHideForm.Margin = new System.Windows.Forms.Padding(4);
-            this.btnHideForm.Name = "btnHideForm";
-            this.btnHideForm.Size = new System.Drawing.Size(43, 14);
-            this.btnHideForm.TabIndex = 20;
-            this.btnHideForm.UseVisualStyleBackColor = false;
-            this.btnHideForm.Click += new System.EventHandler(this.btnHideForm_Click);
             // 
             // frmCustomer
             // 

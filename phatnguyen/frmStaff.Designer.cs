@@ -57,6 +57,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.btnHideForm = new System.Windows.Forms.Button();
             this.btnOffStaff = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.gbxIPIFStaff.SuspendLayout();
             this.gbxStaffList.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvwStaff)).BeginInit();
@@ -69,14 +70,14 @@
             this.lblID.Location = new System.Drawing.Point(1304, 37);
             this.lblID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblID.Name = "lblID";
-            this.lblID.Size = new System.Drawing.Size(21, 17);
+            this.lblID.Size = new System.Drawing.Size(0, 20);
             this.lblID.TabIndex = 1;
-            this.lblID.Text = "ID";
             this.lblID.Click += new System.EventHandler(this.lblID_Click);
             // 
             // gbxIPIFStaff
             // 
             this.gbxIPIFStaff.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.gbxIPIFStaff.Controls.Add(this.label1);
             this.gbxIPIFStaff.Controls.Add(this.btnSearch);
             this.gbxIPIFStaff.Controls.Add(this.txtSearch);
             this.gbxIPIFStaff.Controls.Add(this.cbxSearchStaff);
@@ -98,6 +99,7 @@
             this.gbxIPIFStaff.Controls.Add(this.label4);
             this.gbxIPIFStaff.Controls.Add(this.label3);
             this.gbxIPIFStaff.Controls.Add(this.label2);
+            this.gbxIPIFStaff.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbxIPIFStaff.Location = new System.Drawing.Point(4, 72);
             this.gbxIPIFStaff.Margin = new System.Windows.Forms.Padding(4);
             this.gbxIPIFStaff.Name = "gbxIPIFStaff";
@@ -106,6 +108,7 @@
             this.gbxIPIFStaff.TabIndex = 2;
             this.gbxIPIFStaff.TabStop = false;
             this.gbxIPIFStaff.Text = "Nhập thông tin";
+            this.gbxIPIFStaff.Enter += new System.EventHandler(this.gbxIPIFStaff_Enter);
             // 
             // btnSearch
             // 
@@ -125,7 +128,7 @@
             this.txtSearch.Location = new System.Drawing.Point(1009, 193);
             this.txtSearch.Margin = new System.Windows.Forms.Padding(4);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(276, 22);
+            this.txtSearch.Size = new System.Drawing.Size(276, 27);
             this.txtSearch.TabIndex = 18;
             // 
             // cbxSearchStaff
@@ -134,8 +137,9 @@
             this.cbxSearchStaff.Location = new System.Drawing.Point(827, 192);
             this.cbxSearchStaff.Margin = new System.Windows.Forms.Padding(4);
             this.cbxSearchStaff.Name = "cbxSearchStaff";
-            this.cbxSearchStaff.Size = new System.Drawing.Size(160, 24);
+            this.cbxSearchStaff.Size = new System.Drawing.Size(160, 28);
             this.cbxSearchStaff.TabIndex = 17;
+            this.cbxSearchStaff.SelectedIndexChanged += new System.EventHandler(this.cbxSearchStaff_SelectedIndexChanged);
             // 
             // label8
             // 
@@ -222,8 +226,9 @@
             this.dtpDOB.Location = new System.Drawing.Point(251, 265);
             this.dtpDOB.Margin = new System.Windows.Forms.Padding(4);
             this.dtpDOB.Name = "dtpDOB";
-            this.dtpDOB.Size = new System.Drawing.Size(349, 22);
+            this.dtpDOB.Size = new System.Drawing.Size(349, 27);
             this.dtpDOB.TabIndex = 9;
+            this.dtpDOB.ValueChanged += new System.EventHandler(this.dtpDOB_ValueChanged);
             // 
             // cbxGender
             // 
@@ -231,7 +236,7 @@
             this.cbxGender.Location = new System.Drawing.Point(251, 204);
             this.cbxGender.Margin = new System.Windows.Forms.Padding(4);
             this.cbxGender.Name = "cbxGender";
-            this.cbxGender.Size = new System.Drawing.Size(349, 24);
+            this.cbxGender.Size = new System.Drawing.Size(349, 28);
             this.cbxGender.TabIndex = 8;
             this.cbxGender.SelectedIndexChanged += new System.EventHandler(this.cbxGender_SelectedIndexChanged);
             // 
@@ -240,32 +245,36 @@
             this.txtAddressStaff.Location = new System.Drawing.Point(915, 136);
             this.txtAddressStaff.Margin = new System.Windows.Forms.Padding(4);
             this.txtAddressStaff.Name = "txtAddressStaff";
-            this.txtAddressStaff.Size = new System.Drawing.Size(349, 22);
+            this.txtAddressStaff.Size = new System.Drawing.Size(349, 27);
             this.txtAddressStaff.TabIndex = 11;
+            this.txtAddressStaff.TextChanged += new System.EventHandler(this.txtAddressStaff_TextChanged);
             // 
             // txtPhoneStaff
             // 
             this.txtPhoneStaff.Location = new System.Drawing.Point(915, 64);
             this.txtPhoneStaff.Margin = new System.Windows.Forms.Padding(4);
             this.txtPhoneStaff.Name = "txtPhoneStaff";
-            this.txtPhoneStaff.Size = new System.Drawing.Size(349, 22);
+            this.txtPhoneStaff.Size = new System.Drawing.Size(349, 27);
             this.txtPhoneStaff.TabIndex = 10;
+            this.txtPhoneStaff.TextChanged += new System.EventHandler(this.txtPhoneStaff_TextChanged);
             // 
             // txtStaffName
             // 
             this.txtStaffName.Location = new System.Drawing.Point(251, 146);
             this.txtStaffName.Margin = new System.Windows.Forms.Padding(4);
             this.txtStaffName.Name = "txtStaffName";
-            this.txtStaffName.Size = new System.Drawing.Size(349, 22);
+            this.txtStaffName.Size = new System.Drawing.Size(349, 27);
             this.txtStaffName.TabIndex = 7;
+            this.txtStaffName.TextChanged += new System.EventHandler(this.txtStaffName_TextChanged);
             // 
             // txtStaffCode
             // 
             this.txtStaffCode.Location = new System.Drawing.Point(251, 88);
             this.txtStaffCode.Margin = new System.Windows.Forms.Padding(4);
             this.txtStaffCode.Name = "txtStaffCode";
-            this.txtStaffCode.Size = new System.Drawing.Size(349, 22);
+            this.txtStaffCode.Size = new System.Drawing.Size(349, 27);
             this.txtStaffCode.TabIndex = 6;
+            this.txtStaffCode.TextChanged += new System.EventHandler(this.txtStaffCode_TextChanged);
             // 
             // label7
             // 
@@ -335,7 +344,9 @@
             // 
             // gbxStaffList
             // 
+            this.gbxStaffList.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.gbxStaffList.Controls.Add(this.dgvwStaff);
+            this.gbxStaffList.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbxStaffList.Location = new System.Drawing.Point(0, 378);
             this.gbxStaffList.Margin = new System.Windows.Forms.Padding(4);
             this.gbxStaffList.Name = "gbxStaffList";
@@ -356,10 +367,11 @@
             this.dgvwStaff.Size = new System.Drawing.Size(1426, 277);
             this.dgvwStaff.TabIndex = 0;
             this.dgvwStaff.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvwStaff_CellClick);
+            this.dgvwStaff.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvwStaff_CellContentClick);
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.btnHideForm);
             this.panel2.Controls.Add(this.btnOffStaff);
@@ -375,7 +387,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.Red;
+            this.label10.ForeColor = System.Drawing.Color.PaleVioletRed;
             this.label10.Location = new System.Drawing.Point(528, 13);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
@@ -414,6 +426,16 @@
             this.btnOffStaff.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnOffStaff.UseVisualStyleBackColor = true;
             this.btnOffStaff.Click += new System.EventHandler(this.btnOffStaff_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(1254, 37);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(31, 20);
+            this.label1.TabIndex = 20;
+            this.label1.Text = "ID:";
             // 
             // frmStaff
             // 
@@ -469,5 +491,6 @@
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label1;
     }
 }
