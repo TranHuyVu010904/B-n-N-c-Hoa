@@ -267,6 +267,7 @@
             this.txtStaffCode.Name = "txtStaffCode";
             this.txtStaffCode.Size = new System.Drawing.Size(349, 22);
             this.txtStaffCode.TabIndex = 6;
+            this.txtStaffCode.TextChanged += new System.EventHandler(this.txtStaffCode_TextChanged_1);
             // 
             // label7
             // 
@@ -360,7 +361,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.btnHideForm);
             this.panel2.Controls.Add(this.btnOffStaff);
@@ -376,7 +377,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.Red;
+            this.label10.ForeColor = System.Drawing.Color.DarkGoldenrod;
             this.label10.Location = new System.Drawing.Point(528, 13);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";

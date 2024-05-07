@@ -71,6 +71,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1386, 64);
             this.panel2.TabIndex = 5;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
             // 
             // label10
@@ -335,6 +336,7 @@
             this.txtStaffName.Name = "txtStaffName";
             this.txtStaffName.Size = new System.Drawing.Size(239, 22);
             this.txtStaffName.TabIndex = 3;
+            this.txtStaffName.TextChanged += new System.EventHandler(this.txtStaffName_TextChanged);
             // 
             // cbxStaffCode
             // 
@@ -344,6 +346,7 @@
             this.cbxStaffCode.Name = "cbxStaffCode";
             this.cbxStaffCode.Size = new System.Drawing.Size(221, 24);
             this.cbxStaffCode.TabIndex = 2;
+            this.cbxStaffCode.SelectedIndexChanged += new System.EventHandler(this.cbxStaffCode_SelectedIndexChanged);
             this.cbxStaffCode.SelectedValueChanged += new System.EventHandler(this.cbxStaffCode_SelectedValueChanged);
             // 
             // label3
@@ -392,6 +395,7 @@
             this.dgvwSalary.Size = new System.Drawing.Size(1378, 299);
             this.dgvwSalary.TabIndex = 0;
             this.dgvwSalary.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvwSalary_CellClick);
+            this.dgvwSalary.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvwSalary_CellContentClick);
             // 
             // frmSalary
             // 

@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Globalization;
 using System.Windows.Forms;
 using Nuochoa.Model;
+using System.Data.SqlClient;
 
 namespace Nuochoa
 {
@@ -51,20 +52,10 @@ namespace Nuochoa
         }
         public void Display()
         {
-           /* using (PNPdataEntities _entity = new PNPdataEntities())
-            {
-                List<SalaryInfo> _salaryinfo = new List<SalaryInfo>();
-                _salaryinfo = _entity.tbSalary_.Select(x => new SalaryInfo
-                {
-                    ID=x.ID,
-                    StaffCode=x.StaffCode,
-                    StaffName=x.StaffName,
-                    HoursWork=x.Hours_work,
-                    Bonus=x.Bonus,
-                    TotalSalary=x.Total_Salary
-                }).ToList();
-                dgvwSalary.DataSource = _salaryinfo;
-            }*/
+            string query = "SELECT * FROM [tbSalary*]";
+            DataTable dt = XemDL(query); // Sử dụng hàm kết nối để thực thi câu lệnh SELECT
+
+            dgvwSalary.DataSource = dt;
         }
         private void DataGridViewLoad()
         {
@@ -91,6 +82,46 @@ namespace Nuochoa
                 cbxStaffCode.ValueMember = "ID";
             }*/
         }
+
+
+
+        public SqlConnection cn = new SqlConnection();
+        public void ketnoi()
+        {
+            try
+            {
+                if (cn.State == 0)
+                {
+                    cn.ConnectionString = @"Data Source=LAPTOP-VOLE2257\TRONGNHAN;Initial Catalog=PNPdata;Integrated Security=True";
+                    cn.Open();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public void Ngatketnoi()
+        {
+            if (cn.State != 0)
+            {
+                cn.Close();
+            }
+        }
+
+        public DataTable XemDL(string sql)
+        {
+            ketnoi();
+
+            SqlDataAdapter adap = new SqlDataAdapter(sql, cn);
+            DataTable dt = new DataTable();
+            adap.Fill(dt);
+
+            return dt;
+
+            //Ngatketnoi();
+        }
+
 
         private void cbxStaffCode_SelectedValueChanged(object sender, EventArgs e)
         {
@@ -222,22 +253,50 @@ namespace Nuochoa
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            /*tbSalary_ tbSalary_ = new tbSalary_();
-            tbSalary_.StaffCode = cbxStaffCode.Text;
-            tbSalary_.StaffName = txtStaffName.Text;
-            tbSalary_.Hours_work = Convert.ToInt32(txtHours.Text);
-            tbSalary_.Bonus = Convert.ToDouble(txtBonus.Text);
-            tbSalary_.Total_Salary = Convert.ToDouble(txtTotalSalary.Text);
-            bool result = SaveSalary(tbSalary_);
-            if (result == true)
+            try
             {
-                MessageBox.Show("Thêm Thành Công", "Save", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                // Lấy dữ liệu từ các textbox
+                string staffCode = cbxStaffCode.Text;
+                string staffname = txtStaffName.Text;
+                 
+                DateTime hours = txtHours.Value;
+                string bouns = txtBonus.Text;
+                string Tongluong = txtTotalSalary.Text;
+
+                // Kiểm tra các giá trị bắt buộc
+                if (string.IsNullOrWhiteSpace(staffCode) || string.IsNullOrWhiteSpace(staffname) )
+                {
+                    MessageBox.Show("Vui lòng nhập đầy đủ thông tin nhân viên!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+                if (IsStaffCodeExists(staffCode))
+                {
+                    MessageBox.Show("Mã khách hàng đã tồn tại trong cơ sở dữ liệu!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+
+                string sqlInsert = string.Format("INSERT INTO [tbSalary*] (StaffCode, Name, Gender, Age, PhoneNumber, Address) \r\nVALUES ('{0}', N'{1}', N'{2}', '{3}', '{4}', N'{5}')",
+                                                  staffCode, staffname, dob.ToString("yyyy-MM-dd"), phone, address);
+
+
+                ThucThiDl(sqlInsert);
+
+
+                MessageBox.Show("Thêm thông tin nhân viên thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+
+                ClearFields();
+
+
                 Display();
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Please try again?", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }*/
+
+                MessageBox.Show("Lỗi khi thêm thông tin nhân viên: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
         }
 
         private void dgvwSalary_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -380,6 +439,26 @@ namespace Nuochoa
         }
 
         private void gbxInfoSalary_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void cbxStaffCode_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtStaffName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvwSalary_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

@@ -11,7 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.XPath;
-//using System.Globalization; //Thu vien de dinh danh datetime tu gridview hien len thanh datetime trong form 
+
 
 namespace Nuochoa
 {
@@ -72,17 +72,7 @@ namespace Nuochoa
             txtAddressStaff.Text = "";
         }
 
-        /* public bool SaveStaff(tbStaff_ tbStaff_)
-         {
-             bool result = false;
-             using (PNPdataEntities _entity = new PNPdataEntities())
-             {
-                 _entity.tbStaff_.Add(tbStaff_);
-                 _entity.SaveChanges();
-                 result = true;
-             }
-             return result;
-         }*/
+       
 
 
         private void panel2_MouseDown(object sender, MouseEventArgs e)
@@ -135,7 +125,7 @@ namespace Nuochoa
             return count > 0;
         }
 
-        //SAVE
+       
         private void btnSave_Click(object sender, EventArgs e)
         {
             try
@@ -157,28 +147,28 @@ namespace Nuochoa
                 if (IsStaffCodeExists(staffCode))
                 {
                     MessageBox.Show("Mã khách hàng đã tồn tại trong cơ sở dữ liệu!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return; // Không thực hiện thêm nữa nếu mã khách hàng đã tồn tại
+                    return; 
                 }
 
-                // Xây dựng câu lệnh SQL INSERT
+                
                 string sqlInsert = string.Format("INSERT INTO [tbStaff*] (StaffCode, Name, Gender, Age, PhoneNumber, Address) \r\nVALUES ('{0}', N'{1}', N'{2}', '{3}', '{4}', N'{5}')",
                                                   staffCode, staffname, gender, dob.ToString("yyyy-MM-dd"), phone, address);
 
-                // Thực thi câu lệnh INSERT
+                
                 ThucThiDl(sqlInsert);
 
-                // Hiển thị thông báo khi thêm thành công
+                
                 MessageBox.Show("Thêm thông tin nhân viên thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                // Sau khi thêm, làm mới các trường nhập liệu
+               
                 ClearFields();
 
-                // Sau khi thêm, hiển thị lại danh sách khách hàng
+                
                 Display();
             }
             catch (Exception ex)
             {
-                // Hiển thị thông báo khi có lỗi xảy ra
+                
                 MessageBox.Show("Lỗi khi thêm thông tin nhân viên: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
@@ -203,33 +193,7 @@ namespace Nuochoa
             }
         }
 
-        //DELETE
-        /*public bool DeleteStaff(int id)
-        {
-            bool result = false;
-            try
-            {
-                using (PNPdataEntities _entity = new PNPdataEntities())
-                {
-                    tbStaff_ _staff = _entity.tbStaff_.Find(id);
-                    if (_staff != null)
-                    {
-                        _entity.tbStaff_.Remove(_staff);
-                        _entity.SaveChanges();
-                        result = true;
-                    }
-                    else
-                    {
-                        result = false;
-                    }
-                }
-            }
-            catch
-            {
-                result = false;
-            }
-            return result;
-        }*/
+        
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
@@ -245,51 +209,32 @@ namespace Nuochoa
                 {
                     try
                     {
-                        // Tạo câu lệnh SQL DELETE
+                        
                         string sqlDelete = string.Format("DELETE FROM [tbStaff*] WHERE ID = {0}", staffID);
 
-                        // Thực thi câu lệnh DELETE
+                       
                         ThucThiDl(sqlDelete);
 
-                        // Hiển thị thông báo khi xóa thành công
                         MessageBox.Show("Xóa nhân viên thành công!");
 
-                        // Hiển thị lại danh sách khách hàng sau khi xóa
+                      
                         Display();
                     }
                     catch (Exception ex)
                     {
-                        // Hiển thị thông báo khi có lỗi xảy ra
+                        
                         MessageBox.Show("Lỗi khi xóa nhân viên: " + ex.Message);
                     }
                 }
             }
             else
             {
-                // Hiển thị thông báo nếu không có khách hàng nào được chọn
+               
                 MessageBox.Show("Vui lòng chọn nhân viên để xóa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
-        //UPDATE
-
-        /* public bool UpdateStaff(tbStaff_ sta)
-         {
-             bool result = false;
-             using (PNPdataEntities _entity = new PNPdataEntities())
-             {
-                 tbStaff_ _staff = _entity.tbStaff_.Where(x => x.ID == sta.ID).Select(x => x).FirstOrDefault();
-                 _staff.StaffCode = sta.StaffCode;
-                 _staff.Name = sta.Name;
-                 _staff.Age = sta.Age;
-                 _staff.Gender = sta.Gender;
-                 _staff.PhoneNumber = sta.PhoneNumber;
-                 _staff.Address = sta.Address;
-                 _entity.SaveChanges();
-                 result = true;
-             }
-             return result;
-         }*/
+        
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
@@ -308,37 +253,37 @@ namespace Nuochoa
                     if (IsStaffCodeExists(staffCode, staffID))
                     {
                         MessageBox.Show("Mã nhân viên đã tồn tại trong cơ sở dữ liệu!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        return; // Không thực hiện sửa nữa nếu nhân viên đã tồn tại
+                        return; 
                     }
-                    // Xây dựng câu lệnh SQL UPDATE
+                    
                     string sqlUpdate = string.Format("UPDATE [tbStaff*] SET staffCode = '{0}', Name = N'{1}', Gender = N'{2}', Age = '{3}', PhoneNumber = '{4}', Address = N'{5}' WHERE ID = {6}",
                                                       staffCode, staffName, gender, dob.ToString("yyyy-MM-dd"), phone, address, staffID);
 
-                    // Thực thi câu lệnh UPDATE
+                    
                     ThucThiDl(sqlUpdate);
 
-                    // Hiển thị thông báo khi cập nhật thành công
+                    
                     MessageBox.Show("Cập nhật thông tin nhân viên thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                    // Sau khi cập nhật, làm mới các trường nhập liệu và hiển thị lại danh sách nhân viên
+                    
                     ClearFields();
                     Display();
                 }
                 catch (Exception ex)
                 {
-                    // Hiển thị thông báo khi có lỗi xảy ra
+                    
                     MessageBox.Show("Lỗi khi cập nhật thông nhân viên: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else
             {
-                // Hiển thị thông báo nếu không có dòng nào được chọn
+                
                 MessageBox.Show("Vui lòng chọn một nhân viên để cập nhật!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
 
-        //CLOSE
+        
         private void btnClose_Click(object sender, EventArgs e)
         {
             ClearFields();
@@ -472,6 +417,11 @@ namespace Nuochoa
         }
 
         private void cbxSearchStaff_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtStaffCode_TextChanged_1(object sender, EventArgs e)
         {
 
         }
