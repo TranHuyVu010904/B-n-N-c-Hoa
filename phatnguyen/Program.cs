@@ -18,10 +18,6 @@ namespace Nuochoa
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new frmLogin());   
 
-            
-
-
-
         }
     }
 }
