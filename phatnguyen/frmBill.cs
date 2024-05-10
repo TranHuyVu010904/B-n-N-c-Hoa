@@ -9,6 +9,7 @@ using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Configuration;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Globalization;
 using System.Linq;
 using System.Text;
@@ -18,50 +19,158 @@ using System.Windows.Forms;
 namespace Nuochoa
 {
     public partial class frmBill : Form
- 
-    { 
+
+    {
+        String strcon = @"Data Source=LAPTOP-6K3UA9B7\HUYVU;Initial Catalog=PNPdata;Integrated Security=True";
+        SqlConnection conn = null;
         public frmBill()
         {
             InitializeComponent();
+            connect();
         }
+        void connect()
+        {
+            try
+            {
+                conn = new SqlConnection(strcon); // Khởi tạo kết nối
+                conn.Open(); // Mở kết nối
+                if (conn.State == ConnectionState.Open)
+                {
+                    Console.WriteLine("Kết nối đến cơ sở dữ liệu thành công.");
+                }
+                else
+                {
+                    Console.WriteLine("Không thể kết nối đến cơ sở dữ liệu.");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Lỗi khi mở kết nối: " + ex.Message);
+            }
+        }
+       
+        DataTable getDSStaff()
+        {
+            string strSQL = "Select * from [tbStaff*]"; SqlDataAdapter adapter;
+            adapter = new SqlDataAdapter(strSQL, conn);
+            DataSet dataset = new DataSet();
+            try
+            {
+                adapter.Fill(dataset); return dataset.Tables[0];
+            }
+            catch
+            {
+                return null;
+            }
+        }
+        DataTable getDSCustomer()
+        {
+            string strSQL = "Select * from [tbCustomer*]"; SqlDataAdapter adapter;
+            adapter = new SqlDataAdapter(strSQL, conn);
+            DataSet dataset = new DataSet();
+            try
+            {
+                adapter.Fill(dataset); return dataset.Tables[0];
+            }
+            catch
+            {
+                return null;
+            }
+        }
+        DataTable getDSProduct()
+        {
+            string strSQL = "Select * from [tbProduct*]"; SqlDataAdapter adapter;
+            adapter = new SqlDataAdapter(strSQL, conn);
+            DataSet dataset = new DataSet();
+            try
+            {
+                adapter.Fill(dataset); return dataset.Tables[0];
+            }
+            catch
+            {
+                return null;
+            }
+        }
+        DataTable getDSBill()
+        {
+            string strSQL = "Select * from [tbBill*]"; SqlDataAdapter adapter;
+            adapter = new SqlDataAdapter(strSQL, conn);
+            DataSet dataset = new DataSet();
+            try
+            {
+                adapter.Fill(dataset); return dataset.Tables[0];
+            }
+            catch
+            {
+                return null;
+            }
+        }
+
+
+
+
+        private void LoadDataGridView(string staffCode)
+        {
+            using (SqlConnection connection = new SqlConnection(strcon))
+            {
+                connection.Open();
+
+                string query = "SELECT  [tbBillDetails*].BillCode ,ProductCode, ProductName, Amount, UnitPrice, Discount, IntoMoney " +
+                               "FROM [tbBillDetails*] " +
+                               "INNER JOIN [tbBill*] ON [tbBillDetails*].BillID = [tbBill*].ID " +
+                               "INNER JOIN [tbStaff*] ON [tbBill*].StaffID = [tbStaff*].ID " +
+                               "WHERE [tbStaff*].StaffCode = @StaffCode";
+
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    string StaffCode = cbxStaffCode.Text;
+                    command.Parameters.AddWithValue("@StaffCode", StaffCode);
+
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(command))
+                    {
+                        DataTable dataTable = new DataTable();
+                        adapter.Fill(dataTable);
+
+                        // Hiển thị tất cả các cột trên DataGridView
+                        dgvwBillDetails.AutoGenerateColumns = true;
+
+                        // Gán DataTable làm nguồn dữ liệu cho DataGridView
+                        dgvwBillDetails.DataSource = dataTable;
+                    }
+                }
+            }
+        }
+
+
         public void cbxsearchitem()
         {
             cbxSearchBillCode.Items.Add("Bill Code");
-          
-        }
-        /*public void Display()
-        {
-            using (PNPdataEntities _entity = new PNPdataEntities())
-            {
-                List<BillDetailsInfo> _billdetailsList = new List<BillDetailsInfo>();
-                _billdetailsList = _entity.tbBillDetails_.Select(x => new BillDetailsInfo
-                {
-                     ID=x.ID,
-                    //BillCode = x.BillCode,
-                    ProductCode = x.ProductCode,
-                    ProductName = x.ProductName,
-                    Amount = x.Amount,
-                    UnitPrice = x.UnitPrice,
-                    Discount = x.Discount,
-                    IntoMoney = x.IntoMoney
-                }).ToList();
-                dgvwBillDetails.DataSource = _billdetailsList;
-            }
-        }*/
 
-        //TEXT CHANGED
-        private void DataGridViewLoad()
-        {
-            dgvwBillDetails.Columns[0].Visible = false;
-            dgvwBillDetails.Columns["UnitPrice"].DefaultCellStyle.Format = "0,00.## VND";
-            dgvwBillDetails.Columns["IntoMoney"].DefaultCellStyle.Format = "0,00.## VND";
         }
+
+        private bool enableTextChanged = true;
         private void txtUnitPrice_TextChanged(object sender, EventArgs e)
         {
+            // Nếu biến cờ không được thiết lập, thoát sớm khỏi sự kiện
+            if (!enableTextChanged)
+            {
+                return;
+            }
+
+            // Thực hiện xử lý khi sự kiện được kích hoạt
             System.Globalization.CultureInfo culture = new System.Globalization.CultureInfo("en-US");
-            decimal value = decimal.Parse(txtUnitPrice.Text, System.Globalization.NumberStyles.AllowThousands);
-            txtUnitPrice.Text = String.Format(culture, "{0:N0}", value);
-            txtUnitPrice.Select(txtUnitPrice.Text.Length, 0);
+            decimal value = 0;
+            if (decimal.TryParse(txtUnitPrice.Text, System.Globalization.NumberStyles.AllowThousands, culture, out value))
+            {
+                // Thay đổi giá trị biến cờ để ngăn sự kiện xảy ra khi thay đổi giá trị của TextBox
+                enableTextChanged = false;
+
+                txtUnitPrice.Text = String.Format(culture, "{0:N0}", value);
+                txtUnitPrice.Select(txtUnitPrice.Text.Length, 0);
+
+                // Khôi phục giá trị của biến cờ để cho phép sự kiện xảy ra tiếp tục
+                enableTextChanged = true;
+            }
         }
         private void txtIntoMoney_TextChanged(object sender, EventArgs e)
         {
@@ -80,127 +189,266 @@ namespace Nuochoa
         }
 
         //SET VALUES
-        public void SetValueStaff()
-        {
-            /*using (PNPdataEntities _entity = new PNPdataEntities())
-            {
-                List<tbStaff_> _staff = new List<tbStaff_>();
-                _staff = _entity.tbStaff_.ToList();
-                cbxStaffCode.DataSource = _staff;
-                cbxStaffCode.DisplayMember = "StaffCode";
-                cbxStaffCode.ValueMember = "ID";
-            }*/
-        }
+
 
         private void cbxStaffCode_SelectedValueChanged(object sender, EventArgs e)
         {
-           /* ComboBox cb = sender as ComboBox;
-            using (PNPdataEntities _entity = new PNPdataEntities())
-                if (cb.SelectedValue != null)
+            ComboBox cb = sender as ComboBox;
+
+            // Kiểm tra giá trị đã chọn từ ComboBox
+            if (cb.SelectedValue != null)
+            {
+                // Lấy mã nhân viên đã chọn
+                string selectedStaffID = cb.SelectedValue.ToString();
+
+                // Chuyển đổi selectedStaffID sang kiểu int
+                if (int.TryParse(selectedStaffID, out int staffID))
                 {
-                    tbStaff_ tbs = new tbStaff_();
-                    tbs = cb.SelectedItem as tbStaff_;
-                    txtStaffName.Text = tbs.Name;
-                }*/
+                    if (cbxStaffCode.SelectedIndex == -1)
+                    {
+                        // Nếu không có mục nào được chọn trong ComboBox, xóa nội dung của TextBox
+                        txtStaffName.Clear();
+                    }
+                    // Truy vấn cơ sở dữ liệu để lấy tên của nhân viên dựa trên mã nhân viên
+                    string query = "SELECT Name FROM [tbStaff*] WHERE ID = @ID";
+
+                    using (SqlConnection conn = new SqlConnection(strcon))
+                    using (SqlCommand cmd = new SqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@ID", staffID); // Sử dụng staffID thay vì selectedStaffID
+                        conn.Open();
+
+                        // Thực thi truy vấn
+                        SqlDataReader reader = cmd.ExecuteReader();
+                        if (reader.Read())
+                        {
+                            // Hiển thị tên nhân viên vào TextBox
+                            txtStaffName.Text = reader["Name"].ToString();
+                            reader.Close();
+                            // Đóng SqlDataReader sau khi đã sử dụng
+                            AddUpIntoMoneyByID(staffID, conn);
+                        }
+                        else
+                        {
+                            // Nếu không tìm thấy thông tin về nhân viên, xóa nội dung của TextBox
+                            txtStaffName.Clear();
+                        }
+                    }
+                }
+            }
         }
 
-
-       /* public void SetValueCustomer()
+        private void AddUpIntoMoneyByID(int staffID, SqlConnection connection)
         {
-            using (PNPdataEntities _entity = new PNPdataEntities())
+            
+            string query = "SELECT SUM(IntoMoney) AS TotalIntoMoney FROM [tbBillDetails*] " +
+                               "INNER JOIN [tbBill*] ON [tbBillDetails*].BillID = [tbBill*].ID " +
+                               "WHERE [tbBill*].StaffID = @StaffID";
+
+            using (SqlCommand cmd = new SqlCommand(query, connection))
             {
-                List<tbCustomer_> _customer = new List<tbCustomer_>();
-                _customer = _entity.tbCustomer_.ToList();
-                cbxCustomerCode.DataSource = _customer;
-                cbxCustomerCode.DisplayMember = "CustomerCode";
-                cbxCustomerCode.ValueMember = "ID";
+                cmd.Parameters.AddWithValue("@StaffID", staffID); // Sử dụng tên tham số là @StaffID
+                object result = cmd.ExecuteScalar();
+
+                if (result != DBNull.Value)
+                {
+                    decimal totalIntoMoney = Convert.ToDecimal(result);
+                    // Hiển thị tổng IntoMoney vào TextBox
+                    txtTotal.Text = totalIntoMoney.ToString();
+                }
             }
-        }*/
+        }
+
 
 
         private void cbxCustomerCode_SelectedValueChanged(object sender, EventArgs e)
         {
-            /*ComboBox cb = sender as ComboBox;
-            using (PNPdataEntities _entity = new PNPdataEntities())
-                if (cb.SelectedValue != null)
-                {
-                    tbCustomer_ tbc = new tbCustomer_();
-                    tbc = cb.SelectedItem as tbCustomer_;
-                    txtCustomerName.Text = tbc.Name;
-                    txtAddressCustomer.Text = tbc.Address;
-                    txtPhoneCustomer.Text = tbc.PhoneNumber;
-                }*/
-        }
+            ComboBox cb = sender as ComboBox;
 
-
-       /* public void SetValueProduct()
-        {
-            using (PNPdataEntities _entity = new PNPdataEntities())
+            // Kiểm tra giá trị đã chọn từ ComboBox
+            if (cb.SelectedValue != null)
             {
-                List<tbProduct_> _product = new List<tbProduct_>();
-                _product = _entity.tbProduct_.ToList();
-                cbxProductCode.DataSource = _product;
-                cbxProductCode.DisplayMember = "ProductCode";
-                cbxProductCode.ValueMember = "ID";
+                // Lấy mã khách hàng đã chọn
+                string selectedCustomerID = cb.SelectedValue.ToString();
+                // Chuyển đổi selectedStaffID sang kiểu int
+                if (int.TryParse(selectedCustomerID, out int CustomerID))
+                {
+                    // Truy vấn cơ sở dữ liệu để lấy thông tin của khách hàng dựa trên mã khách hàng
+                    string query = "SELECT Name, PhoneNumber, Address FROM [tbCustomer*] WHERE ID = @CustomerID";
+
+                    using (SqlConnection conn = new SqlConnection(strcon))
+                    using (SqlCommand cmd = new SqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@CustomerID", CustomerID);
+                        conn.Open();
+
+                        // Thực thi truy vấn
+                        SqlDataReader reader = cmd.ExecuteReader();
+                        if (reader.Read())
+                        {
+                            // Hiển thị thông tin của khách hàng vào các TextBox tương ứng
+                            txtCustomerName.Text = reader["Name"].ToString();
+                            txtPhoneCustomer.Text = reader["PhoneNumber"].ToString();
+                            txtAddressCustomer.Text = reader["Address"].ToString();
+                        }
+                        else
+                        {
+                            // Nếu không tìm thấy thông tin về khách hàng, xóa nội dung của các TextBox
+                            txtCustomerName.Clear();
+                            txtPhoneCustomer.Clear();
+                            txtAddressCustomer.Clear();
+                        }
+                    }
+                }
             }
-        }*/
-
-
+        }
         private void cbxProductCode_SelectedValueChanged(object sender, EventArgs e)
         {
-           /* ComboBox cb = sender as ComboBox;
-            using (PNPdataEntities _entity = new PNPdataEntities())
-                if (cb.SelectedValue != null)
+            ComboBox cb = sender as ComboBox;
+
+            // Kiểm tra giá trị đã chọn từ ComboBox
+            if (cb.SelectedValue != null)
+            {
+                // Lấy mã sản phẩm đã chọn
+                string selectedProductID = cb.SelectedValue.ToString();
+                if (int.TryParse(selectedProductID, out int CustomerID))
                 {
-                    tbProduct_ tbp = new tbProduct_();
-                    tbp = cb.SelectedItem as tbProduct_;
-                    txtProductName.Text = tbp.ProductName;
-                    txtUnitPrice.Text = tbp.Price.ToString();
-                }*/
+
+
+                    // Truy vấn cơ sở dữ liệu để lấy thông tin của sản phẩm dựa trên mã khách hàng
+                    string query = "SELECT ProductName, Price FROM [tbProduct*] WHERE ID = @ProductID";
+
+                    using (SqlConnection conn = new SqlConnection(strcon))
+                    using (SqlCommand cmd = new SqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@ProductID", selectedProductID);
+                        conn.Open();
+
+                        // Thực thi truy vấn
+                        SqlDataReader reader = cmd.ExecuteReader();
+                        if (reader.Read())
+                        {
+                            // Hiển thị thông tin của sản phẩm vào các TextBox tương ứng
+                            txtProductName.Text = reader["ProductName"].ToString();
+                            txtUnitPrice.Text = reader["Price"].ToString();
+
+                        }
+                        else
+                        {
+                            // Nếu không tìm thấy thông tin về sản phẩm, xóa nội dung của các TextBox
+                            txtProductName.Clear();
+                            txtUnitPrice.Clear();
+
+                        }
+                    }
+                }
+            }
         }
-        private void frmBill_Load(object sender, EventArgs e)
+        private void cbxSearchBillCode_SelectedIndexChanged(object sender, EventArgs e)
         {
-           /* cbxSearchBillCode.Items.Add("Bill Code");
-            btnAddBill.Enabled = true;
-            btnAddProduct.Enabled = false;
-            btnDeleteProduct.Enabled = false;
-            txtBillCode.ReadOnly = true;
-            txtStaffName.ReadOnly = true;
-            txtCustomerName.ReadOnly = true;
-            txtAddressCustomer.ReadOnly = true;
-            txtPhoneCustomer.ReadOnly = true;
-            txtProductName.ReadOnly = true;
-            txtUnitPrice.ReadOnly = true;
-            txtIntoMoney.ReadOnly = true;
-           // txtTotal.Text = "0";
-            txtDiscount.Text ="0";
-            SetValueStaff();
-            cbxStaffCode.SelectedIndex = -1;
-            txtStaffName.Text = "";
-            SetValueCustomer();
-            cbxCustomerCode.SelectedIndex = -1;
-            txtCustomerName.Text = "";
-            txtAddressCustomer.Text = "";
-            txtPhoneCustomer.Text = "";
-            SetValueProduct();
-            cbxProductCode.SelectedIndex = -1;
-            txtProductName.Text = "";
-            txtUnitPrice.Text= "0";
-            //Display();*/
             
         }
+
+
+
+        private void frmBill_Load(object sender, EventArgs e)
+        {
+            // Mở kết nối đến cơ sở dữ liệu
+            using (SqlConnection conn = new SqlConnection(strcon))
+            {
+                conn.Open();
+                string staffCode = cbxStaffCode.Text;
+                // Đặt DataSource cho ComboBox trước khi đặt SelectedIndex
+                cbxStaffCode.DataSource = getDSStaff();
+                cbxStaffCode.DisplayMember = "StaffCode";
+                cbxStaffCode.ValueMember = "ID";
+                
+                // Đặt SelectedIndex của ComboBox thành -1 để không có mục nào được chọn ban đầu
+                cbxStaffCode.SelectedIndex = -1;
+                if (cbxStaffCode.SelectedIndex == -1)
+                {
+                    // Nếu không có mục nào được chọn trong ComboBox, xóa nội dung của TextBox
+                    txtStaffName.Clear();
+                }
+
+                // Đổ dữ liệu lên combobox Customer
+                cbxCustomerCode.DataSource = getDSCustomer();
+                cbxCustomerCode.DisplayMember = "CustomerCode";
+                cbxCustomerCode.ValueMember = "ID";
+                cbxCustomerCode.SelectedIndex = -1;
+                if (cbxCustomerCode.SelectedIndex == -1)
+                {
+                    // Nếu không có mục nào được chọn trong ComboBox, xóa nội dung của TextBox
+                    txtCustomerName.Clear();
+                    txtAddressCustomer.Clear();
+                    txtPhoneCustomer.Clear();
+                }
+                // Đổ dữ liệu lên combobox Product
+                cbxProductCode.DataSource = getDSProduct();
+                cbxProductCode.DisplayMember = "ProductCode";
+                cbxProductCode.ValueMember = "ID";
+                cbxProductCode.SelectedIndex = -1;
+                if (cbxProductCode.SelectedIndex == -1)
+                {
+                    // Nếu không có mục nào được chọn trong ComboBox, xóa nội dung của TextBox
+                    txtProductName.Clear();
+                    txtUnitPrice.Clear();
+                }
+
+                cbxStaffCode.SelectedIndexChanged += CbxStaffCode_SelectedIndexChanged;
+
+               
+                cbxSearchBillCode.DataSource = getDSBill();
+                cbxSearchBillCode.DisplayMember = "BillCode";
+                cbxSearchBillCode.ValueMember = "ID";
+                cbxSearchBillCode.SelectedIndex = -1;
+
+                
+
+                // Load dữ liệu lên DataGridView ban đầu
+                LoadDataGridView(staffCode);
+            }
+        }
+        private void CbxStaffCode_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string staffCode = cbxStaffCode.Text;
+            LoadDataGridView(staffCode);
+        }
+
+
+
 
 
 
         public void ClearFields()
         {
 
+            txtAmount.Clear();
+            txtAmount.Clear();
+            txtBillCode.Clear();
+            cbxStaffCode.SelectedIndex = -1;
+            if (cbxStaffCode.SelectedIndex == -1)
+            {
+                // Nếu không có mục nào được chọn trong ComboBox, xóa nội dung của TextBox
+                txtStaffName.Clear();
+            }
+            cbxCustomerCode.SelectedIndex = -1;
+            if (cbxCustomerCode.SelectedIndex == -1)
+            {
+                // Nếu không có mục nào được chọn trong ComboBox, xóa nội dung của TextBox
+                txtCustomerName.Clear();
+                txtAddressCustomer.Clear();
+                txtPhoneCustomer.Clear();
+            }
             cbxProductCode.SelectedIndex = -1;
-            txtProductName.Text = "";
-            txtUnitPrice.Text = "";
-            txtAmount.Text = "";
-            txtDiscount.Text = "";
-            txtIntoMoney.Text = "";
+            if (cbxProductCode.SelectedIndex == -1)
+            {
+                // Nếu không có mục nào được chọn trong ComboBox, xóa nội dung của TextBox
+                txtProductName.Clear();
+                txtUnitPrice.Clear();
+            }
+
+
         }
 
         private void panel2_MouseDown_1(object sender, MouseEventArgs e)
@@ -242,73 +490,186 @@ namespace Nuochoa
             this.Close();
         }
 
-        //RELOAD FORM
-        private void btnReloadForm_Click(object sender, EventArgs e)
+        
+        private int GetCustomerIDByCode(string customerCode)
         {
-            txtIntoMoney.Text = "0";
-            frmBill_Load(sender, e);
-        }
+            int customerID = -1; // Giả sử -1 là giá trị mặc định nếu không tìm thấy
 
+            // Kết nối đến cơ sở dữ liệu và thực hiện truy vấn để lấy CustomerID dựa trên CustomerCode
+            string query = "SELECT ID FROM [tbCustomer*] WHERE CustomerCode = @CustomerCode";
 
-        //SAVE
-       /* public bool SaveBillDetails(tbBillDetails_ tbBillDetails_)
-        {
-            bool result = false;
-            using (PNPdataEntities _entity = new PNPdataEntities())
+            using (SqlConnection conn = new SqlConnection(strcon))
+            using (SqlCommand cmd = new SqlCommand(query, conn))
             {
-                _entity.tbBillDetails_.Add(tbBillDetails_);
-                _entity.SaveChanges();
-                result = true;
-            }
-            return result;
-        }
-*/
-        public void Total()
-        {
-            txtTotal.Text = "0";
-            for(int i=0;i<dgvwBillDetails.Rows.Count;i++)
-            {
-                txtTotal.Text = Convert.ToString(double.Parse(txtTotal.Text) + double.Parse(dgvwBillDetails.Rows[i].Cells[6].Value.ToString()));
-            }   
-        }
+                cmd.Parameters.AddWithValue("@CustomerCode", customerCode);
+                conn.Open();
 
-        public void checktotal()
-        {
-            if (dgvwBillDetails.Rows.Count == 0)
-            {
-                txtTotal.Text = "0";
-            }
-            else
-            {
-                //txtTotal.Text = "0";
-                for (int i = 0; i < dgvwBillDetails.Rows.Count; i++)
+                // Thực thi truy vấn
+                object result = cmd.ExecuteScalar();
+                if (result != null)
                 {
-                    txtTotal.Text = Convert.ToString(double.Parse(txtTotal.Text) + double.Parse(dgvwBillDetails.Rows[i].Cells[6].Value.ToString()));
+                    // Chuyển đổi kết quả thành kiểu số nguyên
+                    customerID = Convert.ToInt32(result);
                 }
             }
+
+            return customerID;
+        }
+        private int GetStaffIDByCode(string staffCode)
+        {
+            int staffID = -1; // Giả sử -1 là giá trị mặc định nếu không tìm thấy
+
+            // Kết nối đến cơ sở dữ liệu và thực hiện truy vấn để lấy StaffID dựa trên StaffCode
+            string query = "SELECT ID FROM [tbStaff*] WHERE StaffCode = @StaffCode";
+
+            using (SqlConnection conn = new SqlConnection(strcon))
+            using (SqlCommand cmd = new SqlCommand(query, conn))
+            {
+                cmd.Parameters.AddWithValue("@StaffCode", staffCode);
+                conn.Open();
+
+                // Thực thi truy vấn
+                object result = cmd.ExecuteScalar();
+                if (result != null)
+                {
+                    // Chuyển đổi kết quả thành kiểu số nguyên
+                    staffID = Convert.ToInt32(result);
+                }
+            }
+
+            return staffID;
+        }
+        private int GetProductIDByCode(string ProductCode)
+        {
+            int ProductID = -1; // Giả sử -1 là giá trị mặc định nếu không tìm thấy
+
+            // Kết nối đến cơ sở dữ liệu và thực hiện truy vấn để lấy ProductID dựa trên ProductCode
+            string query = "SELECT ID FROM [tbProduct*] WHERE ProductCode = @ProductCode";
+
+            using (SqlConnection conn = new SqlConnection(strcon))
+            using (SqlCommand cmd = new SqlCommand(query, conn))
+            {
+                cmd.Parameters.AddWithValue("@ProductCode", ProductCode);
+                conn.Open();
+
+                // Thực thi truy vấn
+                object result = cmd.ExecuteScalar();
+                if (result != null)
+                {
+                    // Chuyển đổi kết quả thành kiểu số nguyên
+                    ProductID = Convert.ToInt32(result);
+                }
+            }
+
+            return ProductID;
         }
         private void btnAddProduct_Click(object sender, EventArgs e)
         {
-            /*tbBillDetails_ tbbilldetails = new tbBillDetails_();
-            tbbilldetails.ProductCode = cbxProductCode.Text;
-            tbbilldetails.ProductName = txtProductName.Text;
-            tbbilldetails.Amount = Convert.ToInt32(txtAmount.Text);
-            tbbilldetails.UnitPrice = Convert.ToDouble(txtUnitPrice.Text);
-            tbbilldetails.Discount = Convert.ToDouble(txtDiscount.Text);
-            tbbilldetails.IntoMoney = Convert.ToDouble(txtIntoMoney.Text);
-            bool result = SaveBillDetails(tbbilldetails);
-            if (result == true)
+            // Kiểm tra xem các trường dữ liệu có đầy đủ không
+            if (dtpDOS.Value == null || string.IsNullOrWhiteSpace(cbxStaffCode.Text) || string.IsNullOrWhiteSpace(cbxCustomerCode.Text) || string.IsNullOrWhiteSpace(txtIntoMoney.Text))
             {
-                MessageBox.Show("Thêm Thành Công", "Save", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                Display();
-                Total();
+                MessageBox.Show("Vui lòng điền đầy đủ thông tin.");
+                return;
             }
-            else
-            {
-                MessageBox.Show("Thêm Không Thành Công, Please  again?", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }*/
 
+            // Lấy thông tin từ các điều khiển trên giao diện người dùng
+            DateTime DOS = dtpDOS.Value;
+            string StaffCode = cbxStaffCode.Text;
+            string CustomerCode = cbxCustomerCode.Text;
+            string Total = txtIntoMoney.Text.Replace(".", "");
+            float TotalFloat = float.Parse(Total);
+            int CustomerID = GetCustomerIDByCode(CustomerCode);
+            int StaffID = GetStaffIDByCode(StaffCode);
+            string ProductCode = cbxProductCode.Text;
+            int productID = GetProductIDByCode(ProductCode);
+            string billCode = txtBillCode.Text;
+            string productName = txtProductName.Text;
+            string amount = txtAmount.Text;
+            string UnitPrice = txtUnitPrice.Text.Replace(".", "");
+            float UnitPriceFloat = float.Parse(UnitPrice);
+            string discount = txtDiscount.Text;
+            int staffID = GetStaffIDByCode(StaffCode);
+
+
+
+
+
+
+            // Kiểm tra xem StaffID và CustomerID có hợp lệ không
+            if (StaffID == -1 || CustomerID == -1)
+            {
+                MessageBox.Show("Mã nhân viên hoặc mã khách hàng không hợp lệ.");
+                return;
+            }
+
+            if (conn.State != ConnectionState.Open)
+            {
+                conn.Open();
+            }
+            // Thực hiện câu lệnh SQL để thêm sản phẩm vào bảng của bạn
+            try
+            {
+
+                string strSQL = "INSERT INTO [tbBill*] (BillCode,CustomerID, StaffID, DOS, Total, CustomerCode, StaffCode) " +
+                                "VALUES (@BillCode,@CustomerID, @StaffID, @DOS, @Total, @CustomerCode, @StaffCode)";
+                SqlCommand cmd = new SqlCommand(strSQL, conn);
+                cmd.Parameters.AddWithValue("@BillCode", billCode);
+                cmd.Parameters.AddWithValue("@DOS", DOS);
+                cmd.Parameters.AddWithValue("@StaffID", StaffID);
+                cmd.Parameters.AddWithValue("@StaffCode", StaffCode);
+                cmd.Parameters.AddWithValue("@CustomerID", CustomerID);
+                cmd.Parameters.AddWithValue("@CustomerCode", CustomerCode);
+                cmd.Parameters.AddWithValue("@Total", TotalFloat);
+                cmd.ExecuteNonQuery();
+
+                int insertedBillID;
+                using (SqlCommand sqlcmd = new SqlCommand("SELECT ID FroM [tbBill*] where BillCode=@BillCode", conn))
+                {
+                    sqlcmd.Parameters.AddWithValue("@BillCode", billCode);
+                  
+                    //conn.Open();
+                    var result = sqlcmd.ExecuteScalar();
+                    if (result != null)
+                    {
+                        insertedBillID = Convert.ToInt32(result);
+                        // Thêm dữ liệu vào bảng tbBillDetail
+                        string strSQLDetail = "INSERT INTO [tbBillDetails*] (ProductID, ProductName,ProductCode, BillID, BillCode, Amount, UnitPrice, Discount, IntoMoney) " +
+                                               "VALUES (@ProductID, @ProductName, @ProductCode, @BillID, @BillCode, @Amount, @UnitPrice, @Discount, @IntoMoney)";
+                        SqlCommand cmdDetail = new SqlCommand(strSQLDetail, conn);
+                        cmdDetail.Parameters.AddWithValue("@ProductID", productID);
+                        cmdDetail.Parameters.AddWithValue("@ProductName", productName);
+                        cmdDetail.Parameters.AddWithValue("@ProductCode", ProductCode);
+                        cmdDetail.Parameters.AddWithValue("@BillID", insertedBillID);
+                        cmdDetail.Parameters.AddWithValue("@BillCode", billCode);
+                        cmdDetail.Parameters.AddWithValue("@Amount", amount);
+                        cmdDetail.Parameters.AddWithValue("@UnitPrice", UnitPriceFloat);
+                        cmdDetail.Parameters.AddWithValue("@Discount", discount);
+                        cmdDetail.Parameters.AddWithValue("@IntoMoney", TotalFloat);
+                        AddUpIntoMoneyByID(staffID, conn);
+                        cmdDetail.ExecuteNonQuery();
+                        MessageBox.Show("Thêm sản phẩm thành công");
+                        LoadDataGridView(billCode);
+                       
+
+                    }
+                    else
+                    {
+                        MessageBox.Show("Lỗi khi thêm sản phẩm: " );
+                    }
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi thêm sản phẩm: " + ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
         }
+
 
         private void txtAmount_TextChanged(object sender, EventArgs e)
         {
@@ -337,9 +698,9 @@ namespace Nuochoa
             else
             {
                 unitprice = Convert.ToDouble(txtUnitPrice.Text);
-                intomoney = Am * unitprice - Am * unitprice * discount/100;
+                intomoney = Am * unitprice - Am * unitprice * discount / 100;
                 txtIntoMoney.Text = intomoney.ToString();
-               //txtIntoMoney.Text=intomoney.ToString("N3").Replace(".000","");
+                //txtIntoMoney.Text=intomoney.ToString("N3").Replace(".000","");
             }
 
         }
@@ -371,145 +732,66 @@ namespace Nuochoa
             else
             {
                 unitprice = Convert.ToDouble(txtUnitPrice.Text);
-                intomoney = Am * unitprice - Am * unitprice * discount/100;
+                intomoney = Am * unitprice - Am * unitprice * discount / 100;
                 txtIntoMoney.Text = intomoney.ToString();
-                //txtIntoMoney.Text=intomoney.ToString("N3").Replace(".000","");
+                txtIntoMoney.Text = intomoney.ToString("N3").Replace(".000", "");
             }
         }
+        
+
+       
 
 
-        private void dgvwBillDetails_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (dgvwBillDetails.Rows.Count > 0)
-            {
-                foreach (DataGridViewRow row in dgvwBillDetails.SelectedRows)
-                {
-                    lblID.Text = row.Cells[0].Value.ToString();
-                    cbxProductCode.Text = row.Cells[1].Value.ToString();
-                    txtProductName.Text = row.Cells[2].Value.ToString();
-                    txtAmount.Text = row.Cells[3].Value.ToString();
-                    txtUnitPrice.Text = row.Cells[4].Value.ToString();
-                    txtDiscount.Text = row.Cells[5].Value.ToString();
-                    txtIntoMoney.Text = row.Cells[6].Value.ToString();
-                }
-            }
-        }
-        //DELETE
-        /*public bool DeleteProduct(int id)
-        {
-            bool result = false;
-            try
-            {
-                using (PNPdataEntities _entity = new PNPdataEntities())
-                {
-                    tbBillDetails_ _billdetails = _entity.tbBillDetails_.Find(id);
-                    if (_billdetails != null)
-                    {
-                        _entity.tbBillDetails_.Remove(_billdetails);
-                        _entity.SaveChanges();
-                        result = true;
-                    }
-                    else
-                    {
-                        result = false;
-                    }
-                }
-            }
-            catch
-            {
-                result = false;
-            }
-            return result;
-        }*/
+       private void btnDeleteProduct_Click(object sender, EventArgs e)
+{
+        string billCode = txtBillCode.Text;
 
-        private void Resetvalue()
+        string deleteDetailsQuery = "DELETE FROM [tbBillDetails*] WHERE BillCode = @BillCode";
+        string deleteBillQuery = "DELETE FROM [tbBill*] WHERE [tbBill*].BillCode = @BillCode"; // Thêm [tbBill*]. trước BillCode
+
+        try
         {
-            txtBillCode.Text = "";
-            dtpDOS.Value = DateTime.Now;
-            cbxStaffCode.Text = "";
-            cbxCustomerCode.Text = "";
-            txtTotal.Text = "0";
-            cbxProductCode.Text = "";
-            txtAmount.Text = "";
-            txtDiscount.Text = "0";
-            txtIntoMoney.Text = "0";
-        }
-        private void btnDeleteProduct_Click(object sender, EventArgs e)
-        {
-            /*try
-            {
-                int idproduct = Convert.ToInt32(lblID.Text);
-                bool result = DeleteProduct(idproduct);
-                if (result == true)
+                using (SqlConnection connection = new SqlConnection(strcon))
+                 {
+                 connection.Open();
+                using (SqlCommand command = new SqlCommand(deleteDetailsQuery, connection))
                 {
-                    MessageBox.Show("Xóa Thành Công!", "Delete", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    Display();
-                    Total();
+                command.Parameters.AddWithValue("@BillCode", billCode);
+                command.ExecuteNonQuery();
                 }
-                else
+                 }
+
+                using (SqlConnection connection = new SqlConnection(strcon))
+                 {
+                 connection.Open();
+                using (SqlCommand command = new SqlCommand(deleteBillQuery, connection))
                 {
-                    MessageBox.Show("Lôi", "Delete", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                command.Parameters.AddWithValue("@BillCode", billCode);
+                command.ExecuteNonQuery();
                 }
-            }
+                }
+
+                 MessageBox.Show("Xóa thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                // Tải lại dữ liệu sau khi xóa thành công
+                LoadDataGridView(billCode);
+                }
             catch (Exception ex)
-            {
-                MessageBox.Show("Please try again?\n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }*/
-        }
-
-        private void LoadDataGridView()
-        {
-            /*string sql;
-            sql = "SELECT a.ProductName, b.ProductCode, a.Amount, b.UnitPrice, a.Discount,a.IntoMoney FROM [tbBillDetails*] AS a,[tbProduct*] AS b Where a.BillCode=N'" + txtBillCode.Text + "' AND a.ProductCode=b.ProductCode";
-            DataTable tbbilldts;
-            tbbilldts = Functions.GetDataToTable(sql);
-            dgvwBillDetails.DataSource = tbbilldts;
-            dgvwBillDetails.Columns[2].HeaderText = "ProductName";
-            dgvwBillDetails.Columns[3].HeaderText = "ProductCode";
-            dgvwBillDetails.Columns[6].HeaderText = "Amount"; 
-            dgvwBillDetails.Columns[7].HeaderText = "UnitPrice";
-            dgvwBillDetails.Columns[8].HeaderText = "Discount";
-            dgvwBillDetails.Columns[9].HeaderText = "Intomoney";
-            dgvwBillDetails.AllowUserToAddRows = false;
-            dgvwBillDetails.EditMode = DataGridViewEditMode.EditProgrammatically;*/
-        }
+                {
+                     MessageBox.Show("Xóa thất bại: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                 }
+            }
+        
         private void btnAddBill_Click(object sender, EventArgs e)
         {
-/*
-            //Resetvalue();
-            txtBillCode.Text = Functions.CreateKey("BILL");
-            btnAddProduct.Enabled = true;
-            btnDeleteProduct.Enabled = true;
-            //LoadDataGridView();
-            Display();
-            DataGridViewLoad();
-            Total();*/
+            string newBillCode = Functions.CreateKey("BILL");
+            txtBillCode.Text = newBillCode;
 
+            string staffCode = "your_staff_code"; // Thay bằng giá trị thực tế của staffCode
+            LoadDataGridView(staffCode);
         }
 
-        public DataTable XemDL(string sql)
-        {
-            ketnoi();
 
-            SqlDataAdapter adap = new SqlDataAdapter(sql, cn);
-            DataTable dt = new DataTable();
-            adap.Fill(dt);
-
-            return dt;
-
-            //Ngatketnoi();
-        }
-        public SqlCommand ThucThiDl(string sql)
-        {
-            ketnoi();
-
-            SqlCommand cm = new SqlCommand(sql, cn);
-            cm.ExecuteNonQuery();
-
-            return cm;
-
-            //Ngatketnoi();
-        }
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
@@ -522,44 +804,125 @@ namespace Nuochoa
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            if (cbxSearchBillCode.Text == "Bill Code")
-            {
-                dgvwBillDetails.DataSource = XemDL("select * from [tbBillDetails**] where Bill Code like '%" + txtSearchBillCode.Text.Trim() + "%'");
-            }
-        }
+            // Xác định mã BillCode được chọn từ ComboBox
+            string selectedBillCode = cbxSearchBillCode.SelectedItem.ToString();
 
-        public SqlConnection cn = new SqlConnection();
-        public void ketnoi()
-        {
-            try
+            // Tạo kết nối đến cơ sở dữ liệu
+            using (SqlConnection connection = new SqlConnection(strcon))
             {
-                if (cn.State == 0)
+                // Mở kết nối
+                connection.Open();
+                string query = "SELECT * FROM [tbBillDetails*] WHERE BillCode = @BillCode";
+                // Tạo đối tượng SqlCommand để thực thi câu truy vấn
+                using (SqlCommand command = new SqlCommand(query, connection))
                 {
-                    cn.ConnectionString = @"Data Source=LAPTOP-Q2U43A9U;Initial Catalog=PNPdata;Integrated Security=True";
-                    cn.Open();
+                    // Thêm tham số cho câu truy vấn
+                    command.Parameters.AddWithValue("@BillCode", selectedBillCode);
+
+                    // Tạo đối tượng SqlDataAdapter để lấy dữ liệu từ câu truy vấn
+                    SqlDataAdapter adapter = new SqlDataAdapter(command);
+
+                    // Tạo DataTable để chứa dữ liệu từ câu truy vấn
+                    DataTable dataTable = new DataTable();
+
+                        
+                    // Đổ dữ liệu từ SqlDataAdapter vào DataTable
+                    adapter.Fill(dataTable);
+
+                    Console.WriteLine("Số lượng dòng dữ liệu trả về từ câu truy vấn: " + dataTable.Rows.Count);
+
+                    // Hiển thị dữ liệu trong DataGridView 
+                    dgvwBillDetails.DataSource = dataTable;
                 }
             }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
         }
-        public void Ngatketnoi()
-        {
-            if (cn.State != 0)
-            {
-                cn.Close();
-            }
-        }
+        
+
+               
+
+            
+
 
         private void lblID_Click_1(object sender, EventArgs e)
         {
 
         }
 
-        private void cbxSearchBillCode_SelectedIndexChanged(object sender, EventArgs e)
+        
+
+        private void dgvwBillDetails_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            // Kiểm tra xem có phải là ô dữ liệu được nhấp vào không
+            if (e.RowIndex >= 0 && dgvwBillDetails.Columns[e.ColumnIndex].Name == "BillCode")
+            {
+                // Lấy giá trị của cột "BillCode" ở hàng được nhấp vào
+                string selectedBillCode = dgvwBillDetails.Rows[e.RowIndex].Cells["BillCode"].Value.ToString();
+
+                // Thực hiện truy vấn SQL để lấy thông tin từ cả hai bảng tbBill và tbBillDetails dựa trên BillCode
+                string query = "SELECT [tbCustomer*].CustomerCode, [tbStaff*].StaffCode, [tbBill*].DOS, [tbBill*].BillCode, [tbBillDetails*].ProductCode, [tbBillDetails*].ProductName, " +
+               "[tbBillDetails*].Amount, [tbBillDetails*].UnitPrice, [tbBillDetails*].Discount, " +
+               "[tbBillDetails*].IntoMoney " +
+               "FROM [tbBill*] " +
+               "INNER JOIN [tbBillDetails*] ON [tbBill*].ID = [tbBillDetails*].BillID " +
+               "INNER JOIN [tbStaff*] ON [tbStaff*].ID = [tbBill*].StaffID " +
+               "INNER JOIN [tbCustomer*] ON [tbCustomer*].ID = [tbBill*].CustomerID "+
+               "WHERE [tbBill*].BillCode = @BillCode";
+
+                // Thực thi truy vấn và lấy dữ liệu
+                using (SqlConnection connection = new SqlConnection(strcon))
+                {
+                    connection.Open();
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@BillCode", selectedBillCode);
+
+                        using (SqlDataReader reader = command.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                // Lấy dữ liệu từ cơ sở dữ liệu
+                                DateTime DOS = reader.GetDateTime(reader.GetOrdinal("DOS"));
+                                string BillCode = reader["BillCode"].ToString();
+                                string productID = reader["ProductCode"].ToString();
+                                string productName = reader["ProductName"].ToString();
+                                string amount = reader["Amount"].ToString();
+                                string unitPrice = reader["UnitPrice"].ToString();
+                                string discount = reader["Discount"].ToString();
+                                string intoMoney = reader["IntoMoney"].ToString();
+                                string StaffCode = reader["StaffCode"].ToString();
+                                string CustomerCode = reader["CustomerCode"].ToString();
+
+                                // Hiển thị dữ liệu lên các điều khiển trên giao diện người dùng
+                                txtBillCode.Text = BillCode;
+                                cbxProductCode.Text = productID;
+                                txtProductName.Text = productName;
+                                txtAmount.Text = amount;
+                                txtUnitPrice.Text = unitPrice;
+                                txtDiscount.Text = discount;
+                                txtIntoMoney.Text = intoMoney;
+                                dtpDOS.Value = DOS;
+                                cbxStaffCode.Text = StaffCode;
+                                cbxCustomerCode.Text = CustomerCode;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        private void cbxCustomerCode_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void cbxStaffCode_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCancelBill_Click(object sender, EventArgs e)
+        {
+            ClearFields();
         }
     }
 }
