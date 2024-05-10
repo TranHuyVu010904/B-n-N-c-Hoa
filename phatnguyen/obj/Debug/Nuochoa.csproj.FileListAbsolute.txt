@@ -104,6 +104,7 @@ C:\Users\thamt\OneDrive\Máy tính\TheCoffeeHouse\B-n-N-c-Hoa\phatnguyen\obj\Deb
 C:\Users\thamt\OneDrive\Máy tính\TheCoffeeHouse\B-n-N-c-Hoa\phatnguyen\obj\Debug\Nuochoa.csproj.Up2Date
 C:\Users\thamt\OneDrive\Máy tính\TheCoffeeHouse\B-n-N-c-Hoa\phatnguyen\obj\Debug\Nuochoa.exe
 C:\Users\thamt\OneDrive\Máy tính\TheCoffeeHouse\B-n-N-c-Hoa\phatnguyen\obj\Debug\Nuochoa.pdb
+<<<<<<< HEAD
 C:\Users\Huy Vu\Desktop\github\B-n-N-c-Hoa\phatnguyen\bin\Debug\Nuochoa.exe.config
 C:\Users\Huy Vu\Desktop\github\B-n-N-c-Hoa\phatnguyen\bin\Debug\Nuochoa.exe
 C:\Users\Huy Vu\Desktop\github\B-n-N-c-Hoa\phatnguyen\bin\Debug\Nuochoa.pdb
@@ -127,3 +128,28 @@ C:\Users\Huy Vu\Desktop\github\B-n-N-c-Hoa\phatnguyen\obj\Debug\Nuochoa.csproj.C
 C:\Users\Huy Vu\Desktop\github\B-n-N-c-Hoa\phatnguyen\obj\Debug\Nuochoa.csproj.Up2Date
 C:\Users\Huy Vu\Desktop\github\B-n-N-c-Hoa\phatnguyen\obj\Debug\Nuochoa.exe
 C:\Users\Huy Vu\Desktop\github\B-n-N-c-Hoa\phatnguyen\obj\Debug\Nuochoa.pdb
+=======
+C:\gitbanhang\B-n-N-c-Hoa\phatnguyen\bin\Debug\Nuochoa.exe.config
+C:\gitbanhang\B-n-N-c-Hoa\phatnguyen\bin\Debug\Nuochoa.exe
+C:\gitbanhang\B-n-N-c-Hoa\phatnguyen\bin\Debug\Nuochoa.pdb
+C:\gitbanhang\B-n-N-c-Hoa\phatnguyen\bin\Debug\EntityFramework.dll
+C:\gitbanhang\B-n-N-c-Hoa\phatnguyen\bin\Debug\EntityFramework.SqlServer.dll
+C:\gitbanhang\B-n-N-c-Hoa\phatnguyen\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\gitbanhang\B-n-N-c-Hoa\phatnguyen\bin\Debug\EntityFramework.xml
+C:\gitbanhang\B-n-N-c-Hoa\phatnguyen\bin\Debug\EntityFramework.SqlServer.xml
+C:\gitbanhang\B-n-N-c-Hoa\phatnguyen\obj\Debug\Nuochoa.csproj.AssemblyReference.cache
+C:\gitbanhang\B-n-N-c-Hoa\phatnguyen\obj\Debug\Nuochoa.frmBill.resources
+C:\gitbanhang\B-n-N-c-Hoa\phatnguyen\obj\Debug\Nuochoa.frmCustomer.resources
+C:\gitbanhang\B-n-N-c-Hoa\phatnguyen\obj\Debug\Nuochoa.frmProduct.resources
+C:\gitbanhang\B-n-N-c-Hoa\phatnguyen\obj\Debug\Nuochoa.frmStaff.resources
+C:\gitbanhang\B-n-N-c-Hoa\phatnguyen\obj\Debug\Nuochoa.FrmTK.resources
+C:\gitbanhang\B-n-N-c-Hoa\phatnguyen\obj\Debug\Nuochoa.frmLogin.resources
+C:\gitbanhang\B-n-N-c-Hoa\phatnguyen\obj\Debug\Nuochoa.Properties.Resources.resources
+C:\gitbanhang\B-n-N-c-Hoa\phatnguyen\obj\Debug\Nuochoa.frmSalary.resources
+C:\gitbanhang\B-n-N-c-Hoa\phatnguyen\obj\Debug\Nuochoa.StaffControl.resources
+C:\gitbanhang\B-n-N-c-Hoa\phatnguyen\obj\Debug\Nuochoa.csproj.GenerateResource.cache
+C:\gitbanhang\B-n-N-c-Hoa\phatnguyen\obj\Debug\Nuochoa.csproj.CoreCompileInputs.cache
+C:\gitbanhang\B-n-N-c-Hoa\phatnguyen\obj\Debug\Nuochoa.csproj.Up2Date
+C:\gitbanhang\B-n-N-c-Hoa\phatnguyen\obj\Debug\Nuochoa.exe
+C:\gitbanhang\B-n-N-c-Hoa\phatnguyen\obj\Debug\Nuochoa.pdb
+>>>>>>> 64da59272a04118697aee6b1b2461cffbeda5623

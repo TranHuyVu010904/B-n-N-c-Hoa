@@ -88,7 +88,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.BackgroundImage = global::Nuochoa.Properties.Resources.ty1;
+            this.BackgroundImage = global::Nuochoa.Properties.Resources.ty;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1526, 768);
             this.Controls.Add(this.btnClose);
