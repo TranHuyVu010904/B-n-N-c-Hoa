@@ -3,81 +3,47 @@
   "WorkspaceRootPath": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\",
   "Documents": [
     {
-<<<<<<< HEAD
-      "AbsoluteMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|c:\\users\\thamt\\onedrive\\m\u00E1y t\u00EDnh\\thecoffeehouse\\b-n-n-c-hoa\\phatnguyen\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|solutionrelative:phatnguyen\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-=======
+      "AbsoluteMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|c:\\users\\thamt\\onedrive\\m\u00E1y t\u00EDnh\\thecoffeehouse\\b-n-n-c-hoa\\phatnguyen\\frmbill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|solutionrelative:phatnguyen\\frmbill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|solutionrelative:phatnguyen\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\frmbill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|solutionrelative:phatnguyen\\frmbill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|c:\\users\\thamt\\onedrive\\m\u00E1y t\u00EDnh\\thecoffeehouse\\b-n-n-c-hoa\\phatnguyen\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|solutionrelative:phatnguyen\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\frmtk.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|solutionrelative:phatnguyen\\frmtk.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\frmtk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|solutionrelative:phatnguyen\\frmtk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
->>>>>>> fbd46f14d843bde71de20b2c6aaa3d8b23018352
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\frmstaff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|solutionrelative:phatnguyen\\frmstaff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-<<<<<<< HEAD
-=======
+      "AbsoluteMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\salary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|solutionrelative:phatnguyen\\salary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|c:\\users\\thamt\\onedrive\\m\u00E1y t\u00EDnh\\thecoffeehouse\\b-n-n-c-hoa\\phatnguyen\\frmstaff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|solutionrelative:phatnguyen\\frmstaff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Nuochoa||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\frmproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|solutionrelative:phatnguyen\\frmproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|solutionrelative:phatnguyen\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\frmproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|solutionrelative:phatnguyen\\frmproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\frmcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|solutionrelative:phatnguyen\\frmcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\frmcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|solutionrelative:phatnguyen\\frmcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\salary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|solutionrelative:phatnguyen\\salary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
->>>>>>> fbd46f14d843bde71de20b2c6aaa3d8b23018352
     },
     {
       "AbsoluteMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\frmstaff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|solutionrelative:phatnguyen\\frmstaff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-<<<<<<< HEAD
-      "AbsoluteMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\salary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|solutionrelative:phatnguyen\\salary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\frmproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|solutionrelative:phatnguyen\\frmproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\frmcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|solutionrelative:phatnguyen\\frmcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-=======
-      "AbsoluteMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\frmcustomer.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|solutionrelative:phatnguyen\\frmcustomer.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
->>>>>>> fbd46f14d843bde71de20b2c6aaa3d8b23018352
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\frmcustomer.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
-      "RelativeMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|solutionrelative:phatnguyen\\frmcustomer.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\frmbill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|solutionrelative:phatnguyen\\frmbill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\frmproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -88,14 +54,6 @@
       "RelativeMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|solutionrelative:phatnguyen\\frmcustomer.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|solutionrelative:phatnguyen\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\frmtk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|solutionrelative:phatnguyen\\frmtk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\frmcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|solutionrelative:phatnguyen\\frmcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -104,23 +62,16 @@
       "RelativeMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|solutionrelative:phatnguyen\\frmcustomer.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\frmbill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|solutionrelative:phatnguyen\\frmbill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\frmtk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|solutionrelative:phatnguyen\\frmtk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|solutionrelative:phatnguyen\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|solutionrelative:phatnguyen\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Nuochoa||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\salary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|solutionrelative:phatnguyen\\salary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7B7A332A-7CDE-4584-A836-67A37979B461}|phatnguyen\\Nuochoa.csproj|C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\model\\billdetailsinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -170,11 +121,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-<<<<<<< HEAD
-          "SelectedChildIndex": 5,
-=======
-          "SelectedChildIndex": 6,
->>>>>>> fbd46f14d843bde71de20b2c6aaa3d8b23018352
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -182,31 +129,122 @@
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
-              "DocumentIndex": 7,
-              "Title": "frmProduct.cs",
-              "DocumentMoniker": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\frmProduct.cs",
-              "RelativeDocumentMoniker": "phatnguyen\\frmProduct.cs",
-              "ToolTip": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\frmProduct.cs",
-              "RelativeToolTip": "phatnguyen\\frmProduct.cs",
-              "ViewState": "AQIAAIMAAAAAAAAAAAAMwAICAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "frmBill.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\frmBill.cs",
+              "RelativeDocumentMoniker": "phatnguyen\\frmBill.cs",
+              "ToolTip": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\frmBill.cs [Design]",
+              "RelativeToolTip": "phatnguyen\\frmBill.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-26T02:55:24.024Z"
+              "WhenOpened": "2024-05-11T16:57:31.817Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FrmTK.resx",
+              "DocumentMoniker": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\FrmTK.resx",
+              "RelativeDocumentMoniker": "phatnguyen\\FrmTK.resx",
+              "ToolTip": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\FrmTK.resx",
+              "RelativeToolTip": "phatnguyen\\FrmTK.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-05-11T06:32:25.473Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "frmCustomer.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\frmCustomer.cs",
-              "RelativeDocumentMoniker": "phatnguyen\\frmCustomer.cs",
-              "ToolTip": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\frmCustomer.cs [Design]",
-              "RelativeToolTip": "phatnguyen\\frmCustomer.cs [Design]",
+              "Title": "Salary.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\Salary.cs",
+              "RelativeDocumentMoniker": "phatnguyen\\Salary.cs",
+              "ToolTip": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\Salary.cs [Design]",
+              "RelativeToolTip": "phatnguyen\\Salary.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-26T04:11:30.168Z"
+              "WhenOpened": "2024-05-07T13:48:27.931Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 4,
+              "Title": "FrmTK.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\FrmTK.cs",
+              "RelativeDocumentMoniker": "phatnguyen\\FrmTK.cs",
+              "ToolTip": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\FrmTK.cs [Design]",
+              "RelativeToolTip": "phatnguyen\\FrmTK.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T09:47:18.811Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Nuochoa",
+              "DocumentMoniker": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\Nuochoa.csproj",
+              "RelativeDocumentMoniker": "phatnguyen\\Nuochoa.csproj",
+              "ToolTip": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\Nuochoa.csproj",
+              "RelativeToolTip": "phatnguyen\\Nuochoa.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-04-26T04:07:45.422Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Login.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\Login.cs",
+              "RelativeDocumentMoniker": "phatnguyen\\Login.cs",
+              "ToolTip": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\Login.cs [Design]",
+              "RelativeToolTip": "phatnguyen\\Login.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T09:47:19.567Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\Login.cs",
+              "RelativeDocumentMoniker": "phatnguyen\\Login.cs",
+              "ToolTip": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\Login.cs",
+              "RelativeToolTip": "phatnguyen\\Login.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAQwDcAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-26T02:54:20.234Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "frmProduct.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\frmProduct.cs",
+              "RelativeDocumentMoniker": "phatnguyen\\frmProduct.cs",
+              "ToolTip": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\frmProduct.cs [Design]",
+              "RelativeToolTip": "phatnguyen\\frmProduct.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T04:15:53.533Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "packages.config",
+              "DocumentMoniker": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\packages.config",
+              "RelativeDocumentMoniker": "phatnguyen\\packages.config",
+              "ToolTip": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\packages.config",
+              "RelativeToolTip": "phatnguyen\\packages.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-05-07T14:12:28.154Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "frmStaff.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\frmStaff.cs",
+              "RelativeDocumentMoniker": "phatnguyen\\frmStaff.cs",
+              "ToolTip": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\frmStaff.cs [Design]",
+              "RelativeToolTip": "phatnguyen\\frmStaff.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T09:06:36.761Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "frmCustomer.cs",
               "DocumentMoniker": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\frmCustomer.cs",
               "RelativeDocumentMoniker": "phatnguyen\\frmCustomer.cs",
@@ -218,101 +256,30 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "frmBill.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\frmBill.cs",
-              "RelativeDocumentMoniker": "phatnguyen\\frmBill.cs",
-              "ToolTip": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\frmBill.cs [Design]",
-              "RelativeToolTip": "phatnguyen\\frmBill.cs [Design]",
+              "DocumentIndex": 10,
+              "Title": "frmCustomer.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\frmCustomer.cs",
+              "RelativeDocumentMoniker": "phatnguyen\\frmCustomer.cs",
+              "ToolTip": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\frmCustomer.cs [Design]",
+              "RelativeToolTip": "phatnguyen\\frmCustomer.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-26T03:19:31.158Z"
+              "WhenOpened": "2024-04-26T04:11:30.168Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\Program.cs",
-              "RelativeDocumentMoniker": "phatnguyen\\Program.cs",
-              "ToolTip": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\Program.cs",
-              "RelativeToolTip": "phatnguyen\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-26T05:12:41.437Z",
-=======
-              "DocumentIndex": 3,
-              "Title": "frmStaff.cs",
-              "DocumentMoniker": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\frmStaff.cs",
-              "RelativeDocumentMoniker": "phatnguyen\\frmStaff.cs",
-              "ToolTip": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\frmStaff.cs",
-              "RelativeToolTip": "phatnguyen\\frmStaff.cs",
-              "ViewState": "AQIAAFoBAAAAAAAAAAD4v2oBAABHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-26T02:54:58.902Z",
->>>>>>> fbd46f14d843bde71de20b2c6aaa3d8b23018352
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-<<<<<<< HEAD
-              "DocumentIndex": 2,
-=======
-              "DocumentIndex": 4,
->>>>>>> fbd46f14d843bde71de20b2c6aaa3d8b23018352
-              "Title": "frmStaff.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\frmStaff.cs",
-              "RelativeDocumentMoniker": "phatnguyen\\frmStaff.cs",
-              "ToolTip": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\frmStaff.cs [Design]",
-              "RelativeToolTip": "phatnguyen\\frmStaff.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-<<<<<<< HEAD
-              "WhenOpened": "2024-05-05T09:06:36.761Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "frmStaff.cs",
-              "DocumentMoniker": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\frmStaff.cs",
-              "RelativeDocumentMoniker": "phatnguyen\\frmStaff.cs",
-              "ToolTip": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\frmStaff.cs",
-              "RelativeToolTip": "phatnguyen\\frmStaff.cs",
-              "ViewState": "AQIAAKAAAAAAAAAAAAAmwLgBAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-26T02:54:58.902Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-=======
-              "WhenOpened": "2024-05-05T09:06:36.761Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
->>>>>>> fbd46f14d843bde71de20b2c6aaa3d8b23018352
-              "Title": "frmProduct.cs [Design]",
+              "DocumentIndex": 11,
+              "Title": "frmProduct.cs",
               "DocumentMoniker": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\frmProduct.cs",
               "RelativeDocumentMoniker": "phatnguyen\\frmProduct.cs",
-              "ToolTip": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\frmProduct.cs [Design]",
-              "RelativeToolTip": "phatnguyen\\frmProduct.cs [Design]",
+              "ToolTip": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\frmProduct.cs",
+              "RelativeToolTip": "phatnguyen\\frmProduct.cs",
+              "ViewState": "AQIAAIMAAAAAAAAAAAAMwAICAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-<<<<<<< HEAD
-              "WhenOpened": "2024-05-05T04:15:53.533Z"
+              "WhenOpened": "2024-04-26T02:55:24.024Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Salary.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\Salary.cs",
-              "RelativeDocumentMoniker": "phatnguyen\\Salary.cs",
-              "ToolTip": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\Salary.cs [Design]",
-              "RelativeToolTip": "phatnguyen\\Salary.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T13:48:27.931Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "frmCustomer.resx",
               "DocumentMoniker": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\frmCustomer.resx",
               "RelativeDocumentMoniker": "phatnguyen\\frmCustomer.resx",
@@ -323,141 +290,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-=======
-              "WhenOpened": "2024-05-05T04:15:53.533Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "frmProduct.cs",
-              "DocumentMoniker": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\frmProduct.cs",
-              "RelativeDocumentMoniker": "phatnguyen\\frmProduct.cs",
-              "ToolTip": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\frmProduct.cs",
-              "RelativeToolTip": "phatnguyen\\frmProduct.cs",
-              "ViewState": "AQIAAH0BAAAAAAAAAIA5wI4BAABLAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-26T02:55:24.024Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
->>>>>>> fbd46f14d843bde71de20b2c6aaa3d8b23018352
-              "Title": "FrmTK.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\FrmTK.cs",
-              "RelativeDocumentMoniker": "phatnguyen\\FrmTK.cs",
-              "ToolTip": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\FrmTK.cs [Design]",
-              "RelativeToolTip": "phatnguyen\\FrmTK.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-<<<<<<< HEAD
-              "WhenOpened": "2024-05-05T09:47:18.811Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-=======
-              "WhenOpened": "2024-05-07T08:45:24.812Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
->>>>>>> fbd46f14d843bde71de20b2c6aaa3d8b23018352
-              "Title": "Login.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\Login.cs",
-              "RelativeDocumentMoniker": "phatnguyen\\Login.cs",
-              "ToolTip": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\Login.cs [Design]",
-              "RelativeToolTip": "phatnguyen\\Login.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-<<<<<<< HEAD
-              "WhenOpened": "2024-05-05T09:47:19.567Z"
-=======
-              "WhenOpened": "2024-05-07T08:45:23.555Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "frmBill.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\frmBill.cs",
-              "RelativeDocumentMoniker": "phatnguyen\\frmBill.cs",
-              "ToolTip": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\frmBill.cs [Design]",
-              "RelativeToolTip": "phatnguyen\\frmBill.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-26T03:19:31.158Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "frmCustomer.cs",
-              "DocumentMoniker": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\frmCustomer.cs",
-              "RelativeDocumentMoniker": "phatnguyen\\frmCustomer.cs",
-              "ToolTip": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\frmCustomer.cs",
-              "RelativeToolTip": "phatnguyen\\frmCustomer.cs",
-              "ViewState": "AQIAAA4BAAAAAAAAAAAtwB0BAABHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-26T02:55:41.582Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "frmCustomer.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\frmCustomer.cs",
-              "RelativeDocumentMoniker": "phatnguyen\\frmCustomer.cs",
-              "ToolTip": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\frmCustomer.cs [Design]",
-              "RelativeToolTip": "phatnguyen\\frmCustomer.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-26T04:11:30.168Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\Program.cs",
-              "RelativeDocumentMoniker": "phatnguyen\\Program.cs",
-              "ToolTip": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\Program.cs",
-              "RelativeToolTip": "phatnguyen\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-26T05:12:41.437Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Salary.cs",
-              "DocumentMoniker": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\Salary.cs",
-              "RelativeDocumentMoniker": "phatnguyen\\Salary.cs",
-              "ToolTip": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\Salary.cs",
-              "RelativeToolTip": "phatnguyen\\Salary.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEYAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-26T02:56:32.844Z"
->>>>>>> fbd46f14d843bde71de20b2c6aaa3d8b23018352
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-<<<<<<< HEAD
-=======
-              "Title": "frmCustomer.resx",
-              "DocumentMoniker": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\frmCustomer.resx",
-              "RelativeDocumentMoniker": "phatnguyen\\frmCustomer.resx",
-              "ToolTip": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\frmCustomer.resx",
-              "RelativeToolTip": "phatnguyen\\frmCustomer.resx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2024-05-05T08:22:18.607Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
->>>>>>> fbd46f14d843bde71de20b2c6aaa3d8b23018352
+              "DocumentIndex": 14,
               "Title": "frmCustomer.Designer.cs",
               "DocumentMoniker": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\frmCustomer.Designer.cs",
               "RelativeDocumentMoniker": "phatnguyen\\frmCustomer.Designer.cs",
@@ -465,29 +298,11 @@
               "RelativeToolTip": "phatnguyen\\frmCustomer.Designer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-<<<<<<< HEAD
               "WhenOpened": "2024-05-05T08:22:19.985Z"
-=======
-              "WhenOpened": "2024-05-05T08:22:19.985Z",
-              "EditorCaption": ""
->>>>>>> fbd46f14d843bde71de20b2c6aaa3d8b23018352
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "frmBill.cs",
-              "DocumentMoniker": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\frmBill.cs",
-              "RelativeDocumentMoniker": "phatnguyen\\frmBill.cs",
-              "ToolTip": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\frmBill.cs",
-              "RelativeToolTip": "phatnguyen\\frmBill.cs",
-              "ViewState": "AQIAAHUBAAAAAAAAAAD4v3wBAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-26T02:55:55.314Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "FrmTK.cs",
               "DocumentMoniker": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\FrmTK.cs",
               "RelativeDocumentMoniker": "phatnguyen\\FrmTK.cs",
@@ -495,21 +310,7 @@
               "RelativeToolTip": "phatnguyen\\FrmTK.cs",
               "ViewState": "AQIAADkAAAAAAAAAAAD4v0cAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-26T02:54:52.974Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Login.cs",
-              "DocumentMoniker": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\Login.cs",
-              "RelativeDocumentMoniker": "phatnguyen\\Login.cs",
-              "ToolTip": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\Login.cs",
-              "RelativeToolTip": "phatnguyen\\Login.cs",
-              "ViewState": "AQIAAB0AAAAAAAAAAAAgwC4AAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-26T02:54:20.234Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-26T02:54:52.974Z"
             },
             {
               "$type": "Document",
@@ -521,23 +322,12 @@
               "RelativeToolTip": "phatnguyen\\App.config",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-04-26T02:56:07.969Z"
+              "WhenOpened": "2024-04-26T02:56:07.969Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 17,
-              "Title": "Nuochoa",
-              "DocumentMoniker": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\Nuochoa.csproj",
-              "RelativeDocumentMoniker": "phatnguyen\\Nuochoa.csproj",
-              "ToolTip": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\Nuochoa.csproj",
-              "RelativeToolTip": "phatnguyen\\Nuochoa.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-04-26T04:07:45.422Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-<<<<<<< HEAD
               "Title": "Salary.cs",
               "DocumentMoniker": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\Salary.cs",
               "RelativeDocumentMoniker": "phatnguyen\\Salary.cs",
@@ -549,9 +339,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-=======
->>>>>>> fbd46f14d843bde71de20b2c6aaa3d8b23018352
+              "DocumentIndex": 18,
               "Title": "BillDetailsInfo.cs",
               "DocumentMoniker": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\Model\\BillDetailsInfo.cs",
               "RelativeDocumentMoniker": "phatnguyen\\Model\\BillDetailsInfo.cs",
@@ -563,11 +351,7 @@
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
-              "DocumentIndex": 20,
-=======
               "DocumentIndex": 19,
->>>>>>> fbd46f14d843bde71de20b2c6aaa3d8b23018352
               "Title": "Report3.rdlc",
               "DocumentMoniker": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\Report3.rdlc",
               "RelativeDocumentMoniker": "phatnguyen\\Report3.rdlc",
@@ -579,11 +363,7 @@
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
-              "DocumentIndex": 21,
-=======
               "DocumentIndex": 20,
->>>>>>> fbd46f14d843bde71de20b2c6aaa3d8b23018352
               "Title": "Report1.rdlc",
               "DocumentMoniker": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\Report1.rdlc",
               "RelativeDocumentMoniker": "phatnguyen\\Report1.rdlc",
@@ -595,11 +375,7 @@
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
-              "DocumentIndex": 23,
-=======
               "DocumentIndex": 22,
->>>>>>> fbd46f14d843bde71de20b2c6aaa3d8b23018352
               "Title": "CustomerInfo.cs",
               "DocumentMoniker": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\Model\\CustomerInfo.cs",
               "RelativeDocumentMoniker": "phatnguyen\\Model\\CustomerInfo.cs",
@@ -611,11 +387,7 @@
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
-              "DocumentIndex": 22,
-=======
               "DocumentIndex": 21,
->>>>>>> fbd46f14d843bde71de20b2c6aaa3d8b23018352
               "Title": "Report2.rdlc",
               "DocumentMoniker": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\Report2.rdlc",
               "RelativeDocumentMoniker": "phatnguyen\\Report2.rdlc",
@@ -627,11 +399,7 @@
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
-              "DocumentIndex": 26,
-=======
               "DocumentIndex": 25,
->>>>>>> fbd46f14d843bde71de20b2c6aaa3d8b23018352
               "Title": "p.jpg - Bitmap [1300x1025, 24 bit, JPG]",
               "DocumentMoniker": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\Resources\\p.jpg",
               "RelativeDocumentMoniker": "phatnguyen\\Resources\\p.jpg",
@@ -642,11 +410,7 @@
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
-              "DocumentIndex": 25,
-=======
               "DocumentIndex": 24,
->>>>>>> fbd46f14d843bde71de20b2c6aaa3d8b23018352
               "Title": "per.jpg - Bitmap [290x390, 24 bit, JPG]",
               "DocumentMoniker": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\Resources\\per.jpg",
               "RelativeDocumentMoniker": "phatnguyen\\Resources\\per.jpg",
@@ -657,11 +421,7 @@
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
-              "DocumentIndex": 24,
-=======
               "DocumentIndex": 23,
->>>>>>> fbd46f14d843bde71de20b2c6aaa3d8b23018352
               "Title": "ppay.png - PNG [48x48, 32 bit, PNG]",
               "DocumentMoniker": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\Resources\\ppay.png",
               "RelativeDocumentMoniker": "phatnguyen\\Resources\\ppay.png",
@@ -672,11 +432,7 @@
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
-              "DocumentIndex": 28,
-=======
               "DocumentIndex": 27,
->>>>>>> fbd46f14d843bde71de20b2c6aaa3d8b23018352
               "Title": "StaffControl.Designer.cs",
               "DocumentMoniker": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\StaffControl.Designer.cs",
               "RelativeDocumentMoniker": "phatnguyen\\StaffControl.Designer.cs",
@@ -688,11 +444,7 @@
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
-              "DocumentIndex": 27,
-=======
               "DocumentIndex": 26,
->>>>>>> fbd46f14d843bde71de20b2c6aaa3d8b23018352
               "Title": "StaffControl.resx",
               "DocumentMoniker": "C:\\Users\\thamt\\OneDrive\\M\u00E1y t\u00EDnh\\TheCoffeeHouse\\B-n-N-c-Hoa\\phatnguyen\\StaffControl.resx",
               "RelativeDocumentMoniker": "phatnguyen\\StaffControl.resx",
